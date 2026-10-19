@@ -1,0 +1,43 @@
+label: Dense diagnostic
+bg: white
+sector_fill:
+- '#E8E8E8'
+sector_border: '#9E9E9E'
+chrom_cols:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+- '#6E6E6E'
+tracks:
+- key: gene
+  color: '#2C5F8A'
+  type: h
+- key: te
+  color: '#A63D2F'
+  type: h
+- key: gc
+  color: '#3F7D5A'
+  type: l
+track_heights:
+- 0.055
+- 0.075
+- 0.075
+- 0.075
+gaps:
+- 1.2
+- 1.2
+- 1.2
+- 1.2
+- 5
+link_color_by: source
+link_color: '#3B3B3B'
+link_alpha: 0.3
+link_lwd: 0.45
+label_cex: 0.62
+label_font: 1
+label_offset: 1.5
+axis_cex: 0.45
+axis_col: '#555555'
+grid: true
+border_lwd: 0.35

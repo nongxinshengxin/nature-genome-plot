@@ -1,0 +1,60 @@
+id: pangenome-composition.dense-diagnostic
+archetype: pangenome-composition
+label: Dense diagnostic
+status: draft
+preset: templates/presets/pangenome-composition/dense-diagnostic.yaml
+template: templates/R/pangenome-composition.R
+provenance:
+  support_n: 156
+  evidence:
+  - doi: 10.1038/s41586-025-08883-6
+    journal: Nature
+    year: 2025
+    figure: Fig. 1
+    match_pos: 0
+    caption: Pangenome analysis of 149 representative wild and cultivated rice accessions.a,
+      Geographical distribution of 133 wild rice accessions, with dots colou…
+  - doi: 10.1038/s41467-026-68807-4
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 7
+    match_pos: 0
+    caption: Pangenome variation-based GWAS for cattle phenotype traits.a Visualization
+      of genotype-phenotype associations for various traits (e.g., milk fever, ke…
+  - doi: 10.1038/s41467-024-53718-z
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 2
+    match_pos: 0
+    caption: Pan-genome analysis of jujube.a Variation of gene families in the pan-genome
+      and core genome with the increase in the number of jujube genomes. b Dist…
+  - doi: 10.1038/s41588-024-01823-6
+    journal: Nature Genetics
+    year: 2024
+    figure: Fig. 2
+    match_pos: 0
+    caption: Pangenome and core-genome analyses of 28 watermelon accessions.a, Analyses
+      of the pangenome and core-genome models’ sizes reveal a relationship with p…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#A05195'
+  - '#D45087'
+  - '#2F7D5C'
+  - '#6BAED6'
+  grid: true
+  base_font_pt: 6.5
+  point_size: null
+  panels: multi
+when_to_use: 补充图/Extended Data，全基因组扫描，信息密度优先
+avoid_when: 主图、幻灯片、需要强调单一结论时
+pitfalls:
+- 6 pt 以下字号印刷前必须复核
+- 灰底网格不要压过数据
+submission_safe: true
+cvd:
+  dE: '35.6'
+  deutan: '14.2'
+  protan: '13.1'
+  checked: '2026-10-19'

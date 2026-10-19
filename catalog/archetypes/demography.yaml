@@ -1,0 +1,22 @@
+id: demography
+label: 群体历史（SFS / PSMC / LD 衰减）
+status: prototype
+implementation: ggplot2 + patchwork
+structures:
+- triple_panel
+why: 三个互补证据说明群体大小变化与重组历史。
+inputs:
+  sfs: '{file: sfs.tsv, columns: {frequency: int, count: num}}'
+  psmc: '{file: psmc.tsv, columns: {time_ka: num, ne: num}}'
+  ld: '{file: ld.tsv, columns: {distance: int, r2: num}}'
+presets:
+- minimal-editorial
+- dense-diagnostic
+- high-contrast
+rules:
+- PSMC 时间轴用 log
+- LD 拟合失败时退化为散点 + loess，不要硬套 nls
+- SFS 用折叠频谱时注明
+fixtures: fixtures/demography/
+template: templates/R/demography.R
+tests: pending

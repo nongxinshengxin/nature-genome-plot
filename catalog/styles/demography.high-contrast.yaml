@@ -1,0 +1,61 @@
+id: demography.high-contrast
+archetype: demography
+label: High contrast
+status: draft
+preset: templates/presets/demography/high-contrast.yaml
+template: templates/R/demography.R
+provenance:
+  support_n: 39
+  evidence:
+  - doi: 10.1038/s41467-024-54719-8
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 5
+    match_pos: 0
+    caption: Demographic history of focal lineages as estimated with BPP-MSci.Gene
+      flow events included in the demographic model are shown as arrows, signifying
+      th…
+  - doi: 10.1038/s41467-026-75953-2
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 4
+    match_pos: 0
+    caption: Demographic history and genetic introgression of lotus.a Reconstructed
+      effective population size (Ne) trajectories over the past 10,000 years before
+      p…
+  - doi: 10.1038/s41564-026-02327-1
+    journal: Nature Microbiology
+    year: 2026
+    figure: Extended Data Fig. 3
+    match_pos: 0
+    caption: IBD distribution in malaria parasite genetic crosses and in Kayin samples.a-c,
+      Distribution of pairwise genome-wide IBD proportions between any two pr…
+  - doi: 10.1038/s41467-026-69076-x
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2
+    match_pos: 25
+    caption: Population structure and demographic history of Digitaria species.a Geographic
+      distribution of Digitaria accessions used in this study. The primary co…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#0066CC'
+  - '#D9480F'
+  - '#0B7A45'
+  grid: false
+  base_font_pt: 8
+  point_size: null
+  panels: multi
+when_to_use: 汇报、预印本、低质量投影、可及性优先
+avoid_when: 需要精细明暗层次的连续量
+pitfalls:
+- 深色填充会压住数据点
+- 线宽过粗时小面板显脏
+submission_safe: false
+cvd:
+  dE: '65.1'
+  deutan: '45.7'
+  protan: '29.7'
+  checked: '2026-10-19'

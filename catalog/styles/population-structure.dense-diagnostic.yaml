@@ -1,0 +1,62 @@
+id: population-structure.dense-diagnostic
+archetype: population-structure
+label: Dense diagnostic
+status: draft
+preset: templates/presets/population-structure/dense-diagnostic.yaml
+template: templates/R/population-structure.R
+provenance:
+  support_n: 130
+  evidence:
+  - doi: 10.1038/s41586-025-08883-6
+    journal: Nature
+    year: 2025
+    figure: Fig. 3
+    match_pos: 0
+    caption: Population structure and introgression of wild and cultivated rice.a,
+      Phylogenetic tree of 280 Oryza accessions, based on whole-genome SNPs. The scale…
+  - doi: 10.1038/s41467-024-51032-2
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 2
+    match_pos: 0
+    caption: Population structure of P. vulgaris.a Neighbor-joining (NJ) phylogenetic
+      tree constructed using only SNPs located in core genes (bootstrap = 1000). b
+      …
+  - doi: 10.1038/s41467-025-58789-0
+    journal: Nature Communications
+    year: 2025
+    figure: Fig. 1
+    match_pos: 0
+    caption: 'Admixture and principal component plots.A The Admixture plot at K =
+      6 of cases, controls and reference populations: East Asian (EAS) (KGP), South-East…'
+  - doi: 10.1038/s41559-022-01952-3
+    journal: Nature Ecology & Evolution
+    year: 2023
+    figure: Fig. 3
+    match_pos: 0
+    caption: Admixture modelling with qpAdm per individual and group.a, Ternary plot
+      for a three-way admixture model of Aegean individuals using the distal sources…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#2F4B7C'
+  - '#A05195'
+  - '#2F7D5C'
+  - '#8C6D31'
+  - '#7A3E3E'
+  grid: true
+  base_font_pt: 6.5
+  point_size: 0.8
+  panels: multi
+when_to_use: 补充图/Extended Data，全基因组扫描，信息密度优先
+avoid_when: 主图、幻灯片、需要强调单一结论时
+pitfalls:
+- 6 pt 以下字号印刷前必须复核
+- 灰底网格不要压过数据
+submission_safe: true
+cvd:
+  dE: '35'
+  deutan: '12.2'
+  protan: '13.1'
+  checked: '2026-10-19'

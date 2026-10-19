@@ -1,0 +1,14 @@
+label: Minimal editorial
+layout: rectangular
+tree_color: '#333333'
+branch_lw: 0.4
+tip_size: 4.5
+heat_scale:
+- '#F7FBFF'
+- '#08306B'
+heat_border: white
+heat_lw: 0.15
+show_support: true
+base_size: 7
+grid: false
+offset: 0.02

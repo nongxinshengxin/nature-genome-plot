@@ -1,0 +1,18 @@
+id: synteny
+label: 共线性（dotplot / ribbon）
+status: prototype
+implementation: ggplot2
+structures: [dotplot]
+why: 两个组装之间的同源关系一眼可见：对角线是共线，断点是重排，反斜线是倒位。
+inputs:
+  blocks: {file: blocks.tsv, columns: {q_chr: chr, q_start: int, q_end: int, t_chr: chr, t_start: int, t_end: int, strand: 1|-1}}
+  qchrom: {file: qchrom.tsv, columns: {chrom: chr, length: int}}
+  tchrom: {file: tchrom.tsv, columns: {chrom: chr, length: int}}
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+rules:
+  - 点密度按 3 Mb/400 点换算，太密会糊、太疏会断
+  - 倒位用第二色，不要靠斜率判断
+  - 染色体超过 20 条时改 ribbon 或分面
+fixtures: fixtures/synteny/
+template: templates/R/synteny.R
+tests: pending

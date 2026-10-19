@@ -1,0 +1,57 @@
+id: presence-absence.minimal-editorial
+archetype: presence-absence
+label: Minimal editorial
+status: draft
+preset: templates/presets/presence-absence/minimal-editorial.yaml
+template: templates/R/presence-absence.R
+provenance:
+  support_n: 60
+  evidence:
+  - doi: 10.1038/s41564-026-02435-y
+    journal: Nature Microbiology
+    year: 2026
+    figure: Extended Data Fig. 5
+    match_pos: 0
+    caption: Upset plot of orthogroups across orders.Plot shows the distribution and
+      overlap of orthogroups (clusters of orthologous genes) across different orders…
+  - doi: 10.1038/s41586-025-09637-0
+    journal: Nature
+    year: 2025
+    figure: Extended Data Fig. 7
+    match_pos: 11
+    caption: Heatmap of gene presence/absence in 1,086 Saccharomyces cerevisiae isolates.Rows
+      correspond to isolates, colored by ploidy, clade, and super clade, wh…
+  - doi: 10.1038/s41477-024-01713-z
+    journal: Nature Plants
+    year: 2024
+    figure: Fig. 3
+    match_pos: 12
+    caption: Synteny and PAV across four cotton genomes.a, Completely collinear (grey),
+      inverted (red) and PAV (white wedges) sequences are plotted on a common coo…
+  - doi: 10.1038/s41586-026-10229-9
+    journal: Nature
+    year: 2026
+    figure: Fig. 2
+    match_pos: 26
+    caption: Pangenome synteny map and PAV.a, Macrosynteny map. Syntenic blocks were
+      calculated from windowed alignments and converted to a riparian diagram. To
+      ai…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette: []
+  grid: false
+  base_font_pt: 7
+  point_size: null
+  panels: multi
+when_to_use: 主图/首图，需要一屏讲清一个主张
+avoid_when: 数据极密的全基因组扫描；投影设备很差时细线会消失
+pitfalls:
+- 细线在低分辨率投影下变淡
+- 图例过多时改直接标注
+submission_safe: true
+cvd:
+  dE: '53.6'
+  deutan: '18.1'
+  protan: '22.5'
+  checked: '2026-10-19'

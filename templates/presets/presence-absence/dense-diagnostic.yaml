@@ -1,0 +1,23 @@
+low: '#FFFFFF'
+high: '#08306B'
+border_color: '#E0E0E0'
+border_lw: 0.12
+show_row_names: false
+show_row_dend: true
+row_font: 4.0
+col_font: 4.2
+group_colors:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+cat_colors:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+- '#6E6E6E'
+raster: false
+legend_title: Presence
+row_split: true
+label: Dense diagnostic

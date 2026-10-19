@@ -1,0 +1,14 @@
+label: Dense diagnostic
+palette:
+- '#1F3B73'
+- '#B34700'
+base_size: 6.5
+axis_text: 5.5
+grid: true
+line_width: 0.35
+point_size: 0.35
+highlight: '#F2E3D5'
+threshold_fst: 0.25
+threshold_pi: null
+panel_border: true
+legend: none

@@ -1,0 +1,59 @@
+id: phylogenomics.minimal-editorial
+archetype: phylogenomics
+label: Minimal editorial
+status: draft
+preset: templates/presets/phylogenomics/minimal-editorial.yaml
+template: templates/R/phylogenomics.R
+provenance:
+  support_n: 217
+  evidence:
+  - doi: 10.1038/s41586-024-07473-2
+    journal: Nature
+    year: 2024
+    figure: Extended Data Fig. 7
+    match_pos: 0
+    caption: Phylogenetic analysis of the TSPY gene family.Phylogenetic analysis (see
+      Methods) of the protein-coding copies of the TSPY gene family in great apes,
+      …
+  - doi: 10.1038/s41467-023-37004-y
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 3
+    match_pos: 0
+    caption: Phylogenetic tree of 75 high-quality rice genomes using the pan-genome
+      inversion index.Phylogenetic relationships of the 75 high-quality genomes used
+      …
+  - doi: 10.1038/s41467-023-41220-x
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 1
+    match_pos: 0
+    caption: Phylogeny of bovine species and pan-genome of wild and domestic yaks.a
+      Phylogenetic tree of 47 bovine individuals with de novo genomes-based SNPs with…
+  - doi: 10.1038/s41467-025-58543-6
+    journal: Nature Communications
+    year: 2025
+    figure: Fig. 3
+    match_pos: 0
+    caption: Species tree of S. haematobium and S. bovis populations – SVDquartets
+      species tree generated from autosomal SNVs.All nodes were supported by >95%
+      of b…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette: []
+  grid: false
+  base_font_pt: 7
+  point_size: null
+  panels: single
+when_to_use: 主图/首图，需要一屏讲清一个主张
+avoid_when: 数据极密的全基因组扫描；投影设备很差时细线会消失
+pitfalls:
+- 细线在低分辨率投影下变淡
+- 图例过多时改直接标注
+submission_safe: false
+cvd:
+  dE: NA
+  deutan: NA
+  protan: NA
+  checked: '2026-10-19'

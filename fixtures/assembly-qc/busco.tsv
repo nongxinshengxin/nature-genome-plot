@@ -1,0 +1,17 @@
+assembly	class	percent
+A_primary	Complete (single-copy)	92.0
+A_primary	Complete (duplicated)	4.0
+A_primary	Fragmented	3.0
+A_primary	Missing	1.0
+B_alt	Complete (single-copy)	92.0
+B_alt	Complete (duplicated)	4.0
+B_alt	Fragmented	3.0
+B_alt	Missing	1.0
+C_hic	Complete (single-copy)	85.0
+C_hic	Complete (duplicated)	10.0
+C_hic	Fragmented	5.0
+C_hic	Missing	0.0
+D_draft	Complete (single-copy)	85.0
+D_draft	Complete (duplicated)	10.0
+D_draft	Fragmented	5.0
+D_draft	Missing	0.0

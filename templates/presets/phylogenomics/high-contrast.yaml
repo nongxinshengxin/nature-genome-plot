@@ -1,0 +1,14 @@
+label: High contrast
+layout: rectangular
+tree_color: '#333333'
+branch_lw: 0.7
+tip_size: 5.5
+heat_scale:
+- '#FFF5EB'
+- '#7F2704'
+heat_border: white
+heat_lw: 0.15
+show_support: false
+base_size: 8
+grid: false
+offset: 0.02

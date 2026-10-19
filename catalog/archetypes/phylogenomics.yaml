@@ -1,0 +1,22 @@
+id: phylogenomics
+label: 系统发育（树 + 性状热图）
+status: prototype
+implementation: ggtree + gheatmap
+structures:
+- rectangular
+- circular
+why: 把拓扑结构和性状矩阵并排，是进化基因组论文的常见收口图。
+inputs:
+  tree: '{file: tree.nwk, format: newick}'
+  matrix: '{file: matrix.tsv, format: wide, first_col: tip}'
+presets:
+- minimal-editorial
+- dense-diagnostic
+- high-contrast
+rules:
+- 支持度 < 70 不标，避免满屏数字
+- 树和热图必须共享 tip 顺序
+- 叶节点超过 200 改 circular 或折叠
+fixtures: fixtures/phylogenomics/
+template: templates/R/phylogenomics.R
+tests: pending

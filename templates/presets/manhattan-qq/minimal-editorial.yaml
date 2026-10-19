@@ -1,0 +1,16 @@
+label: Minimal editorial
+palette:
+- '#0072B2'
+- '#D55E00'
+point_size: 0.45
+point_alpha: 0.8
+threshold: 5.0e-08
+threshold_color: '#D55E00'
+grid: false
+top_labels: 5
+qq_point_size: 0.5
+base_size: 7
+axis_text: 6
+lead_color: '#D55E00'
+chrom_gap: 0.008
+p_floor: 1.0e-50

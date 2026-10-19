@@ -1,0 +1,23 @@
+low: '#FFFFFF'
+high: '#B2182B'
+border_color: '#333333'
+border_lw: 0.35
+show_row_names: false
+show_row_dend: false
+row_font: 5.0
+col_font: 5.5
+group_colors:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+cat_colors:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+- '#6E6E6E'
+raster: false
+legend_title: Presence
+row_split: true
+label: High contrast

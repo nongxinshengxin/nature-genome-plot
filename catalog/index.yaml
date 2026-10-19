@@ -1,0 +1,157 @@
+version: 0.1.0
+archetypes:
+- id: assembly-qc
+  label: 组装质量（BUSCO + NGx）
+  implementation: ggplot2 + patchwork
+  structures:
+  - busco+ngx
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/assembly-qc/
+  template: templates/R/assembly-qc.R
+  summary: 组装文章的标配质控图：完整度看 BUSCO，连续性看 NGx。
+- id: circos-landscape
+  label: 环形基因组全景 / 弦图
+  implementation: circlize
+  structures:
+  - circular
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  - soft-pastel
+  - mono-blue
+  - warm-editorial
+  fixture: fixtures/circos/
+  template: templates/R/circos-landscape.R
+  summary: 一张图同时表达「染色体尺度的组成」与「区域之间的关系」：组成走轨道， 关系走弦。泛基因组的区块共享、共线性片段、SV 介导的交换、选择信号热点
+    都用这一张图收口。
+- id: demography
+  label: 群体历史（SFS / PSMC / LD 衰减）
+  implementation: ggplot2 + patchwork
+  structures:
+  - triple_panel
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/demography/
+  template: templates/R/demography.R
+  summary: 三个互补证据说明群体大小变化与重组历史。
+- id: linear-tracks
+  label: 线性基因组轨道（基因模型 + 多轨道）
+  implementation: ggplot2 + patchwork
+  structures:
+  - stacked
+  - mirrored
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/linear-tracks/
+  template: templates/R/linear-tracks.R
+  summary: 局部区域的基因结构 + 覆盖度/GC/重复是功能验证图的标准三件套。
+- id: manhattan-qq
+  label: Manhattan + QQ
+  implementation: ggplot2 + patchwork + ggrepel
+  structures:
+  - qq+manhattan
+  - manhattan_only
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/manhattan-qq/
+  template: templates/R/manhattan-qq.R
+  summary: GWAS/选择扫描的标准表达：全基因组信号一眼定位，QQ 图同时交代整体膨胀程度。
+- id: pangenome-composition
+  label: 泛基因组构成（增长曲线 + core/accessory）
+  implementation: ggplot2 + patchwork
+  structures:
+  - growth+stack
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/pangenome-composition/
+  template: templates/R/pangenome-composition.R
+  summary: 泛基因组文章的第一张图：随基因组增加，泛基因组是否饱和、核心是否收敛。
+- id: phylogenomics
+  label: 系统发育（树 + 性状热图）
+  implementation: ggtree + gheatmap
+  structures:
+  - rectangular
+  - circular
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/phylogenomics/
+  template: templates/R/phylogenomics.R
+  summary: 把拓扑结构和性状矩阵并排，是进化基因组论文的常见收口图。
+- id: population-structure
+  label: 群体结构（PCA / ADMIXTURE）
+  implementation: ggplot2 + patchwork
+  structures:
+  - pca+admixture
+  - pca_only
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/population-structure/
+  template: templates/R/population-structure.R
+  summary: 群体遗传与泛基因组论文的标配：左 PCA/UMAP 说「谁和谁像」， 右 ADMIXTURE 说「混了多少」。两图共享同一套群体配色，是跨面板一致性的典型场景。
+- id: presence-absence
+  label: 泛基因组存在缺失热图
+  implementation: ComplexHeatmap
+  structures:
+  - heatmap+annotations
+  - heatmap+tree
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/presence-absence/
+  template: templates/R/presence-absence.R
+  summary: 泛基因组论文的主图：行是基因家族，列是基因组，色块是存在/缺失。 靠列分组和行聚类把「核心—附属」结构和群体分层一眼分开。
+- id: selection-scan
+  label: 选择清除（Fst / π 轨道）
+  implementation: ggplot2 (facet)
+  structures:
+  - two_tracks
+  - composite
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/selection-scan/
+  template: templates/R/selection-scan.R
+  summary: Fst 峰 + π 谷是选择清除的经典签名，候选区用底色标出。
+- id: sv-cnv
+  label: 结构变异全景（密度 + 长度谱 + 频率）
+  implementation: ggplot2 + patchwork
+  structures:
+  - genome-wide
+  - locus
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/sv-cnv/
+  template: templates/R/sv-cnv.R
+  summary: SV 的数量、长度和频率分布是最常被审稿人要求补的三张图，合并成一张最省版面。
+- id: synteny
+  label: 共线性（dotplot / ribbon）
+  implementation: ggplot2
+  structures:
+  - dotplot
+  presets:
+  - minimal-editorial
+  - dense-diagnostic
+  - high-contrast
+  fixture: fixtures/synteny/
+  template: templates/R/synteny.R
+  summary: 两个组装之间的同源关系一眼可见：对角线是共线，断点是重排，反斜线是倒位。

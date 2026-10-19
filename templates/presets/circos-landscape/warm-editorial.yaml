@@ -1,0 +1,43 @@
+label: Warm editorial
+bg: white
+sector_fill:
+- '#FBF2EA'
+sector_border: '#D9B79A'
+chrom_cols:
+- '#B35A1F'
+- '#D9A15B'
+- '#2F6E62'
+- '#8C4A3C'
+- '#5B3A29'
+tracks:
+- key: gene
+  color: '#8C2D04'
+  type: h
+- key: te
+  color: '#E6550D'
+  type: h
+- key: gc
+  color: '#01665E'
+  type: l
+track_heights:
+- 0.062
+- 0.085
+- 0.085
+- 0.085
+gaps:
+- 2.5
+- 2.5
+- 2.5
+- 2.5
+- 8
+link_color_by: source
+link_color: '#B34700'
+link_alpha: 0.3
+link_lwd: 0.6
+label_cex: 0.78
+label_font: 1
+label_offset: 1.65
+axis_cex: 0.5
+axis_col: '#7A5C44'
+grid: false
+border_lwd: 0.45

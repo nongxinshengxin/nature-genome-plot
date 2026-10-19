@@ -1,0 +1,60 @@
+id: selection-scan.minimal-editorial
+archetype: selection-scan
+label: Minimal editorial
+status: draft
+preset: templates/presets/selection-scan/minimal-editorial.yaml
+template: templates/R/selection-scan.R
+provenance:
+  support_n: 99
+  evidence:
+  - doi: 10.1038/s41586-025-08883-6
+    journal: Nature
+    year: 2025
+    figure: Fig. 4
+    match_pos: 0
+    caption: Selective sweep and evolutionary routes of Asian cultivated rice.a, Nucleotide
+      diversity ratio (πw/πc) and fixation index (FST) between wild rice (Or-…
+  - doi: 10.1038/s41586-024-07263-w
+    journal: Nature
+    year: 2024
+    figure: Extended Data Fig. 7
+    match_pos: 0
+    caption: FST and genetic distances plotted against physical distance.Physical
+      distance is shown on the x axis; grey intervals are 1 Mb and black intervals
+      are …
+  - doi: 10.1038/s41564-025-02171-9
+    journal: Nature Microbiology
+    year: 2025
+    figure: Fig. 4
+    match_pos: 0
+    caption: Nucleotide diversity dN/dS across the H. influenzae pangenome.a, The
+      box plots of the estimated average pairwise nucleotide diversity, π, in each
+      gene…
+  - doi: 10.1038/s41477-023-01526-6
+    journal: Nature Plants
+    year: 2023
+    figure: Fig. 4
+    match_pos: 0
+    caption: Selective sweep analysis across carrot populations.a, Selective sweeps
+      and candidate genes contrasting the Wild and Landrace-B populations (domesticat…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#4C78A8'
+  - '#D55E00'
+  grid: false
+  base_font_pt: 7
+  point_size: 0.35
+  panels: multi
+when_to_use: 主图/首图，需要一屏讲清一个主张
+avoid_when: 数据极密的全基因组扫描；投影设备很差时细线会消失
+pitfalls:
+- 细线在低分辨率投影下变淡
+- 图例过多时改直接标注
+submission_safe: true
+cvd:
+  dE: '114.6'
+  deutan: '108.3'
+  protan: '91.9'
+  checked: '2026-10-19'

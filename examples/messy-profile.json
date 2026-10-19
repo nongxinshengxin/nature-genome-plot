@@ -1,0 +1,52 @@
+{
+  "rows": 4001,
+  "cols": 7,
+  "issues": ["染色体命名混用 chr1 与 1，必须先统一", "列 `p_value` 有 41 个 0，log10 会变 Inf，需截断", "高缺失列：note"],
+  "columns": [
+    {
+      "column": "SNP",
+      "type": "character",
+      "n_missing": 0,
+      "pct_missing": 0
+    },
+    {
+      "column": "chromosome",
+      "type": "character",
+      "n_missing": 0,
+      "pct_missing": 0
+    },
+    {
+      "column": "position",
+      "type": "integer",
+      "n_missing": 0,
+      "pct_missing": 0
+    },
+    {
+      "column": "p_value",
+      "type": "numeric",
+      "n_missing": 31,
+      "pct_missing": 0.77
+    },
+    {
+      "column": "beta",
+      "type": "numeric",
+      "n_missing": 0,
+      "pct_missing": 0
+    },
+    {
+      "column": "se",
+      "type": "numeric",
+      "n_missing": 0,
+      "pct_missing": 0
+    },
+    {
+      "column": "note",
+      "type": "character",
+      "n_missing": 4000,
+      "pct_missing": 99.98
+    }
+  ],
+  "chr_column": "chromosome",
+  "p_column": "p_value",
+  "duplicate_keys": 0
+}

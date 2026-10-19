@@ -1,0 +1,23 @@
+low: '#F4F4F4'
+high: '#2166AC'
+border_color: white
+border_lw: 0.25
+show_row_names: false
+show_row_dend: true
+row_font: 4.5
+col_font: 5
+group_colors:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+cat_colors:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+- '#E69F00'
+raster: false
+legend_title: Presence
+row_split: true
+label: Minimal editorial

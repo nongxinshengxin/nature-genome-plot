@@ -1,0 +1,21 @@
+id: pangenome-composition
+label: 泛基因组构成（增长曲线 + core/accessory）
+status: prototype
+implementation: ggplot2 + patchwork
+structures:
+- growth+stack
+why: 泛基因组文章的第一张图：随基因组增加，泛基因组是否饱和、核心是否收敛。
+inputs:
+  growth: '{file: growth.tsv, columns: {genomes: int, pan: int, core: int, softcore:
+    int, shell: int, cloud: int}}'
+presets:
+- minimal-editorial
+- dense-diagnostic
+- high-contrast
+rules:
+- 泛基因组曲线必须标饱和判断，不能只画线
+- core 用下降曲线，不要和 pan 共用 y 轴刻度含义
+- cloud/shell 比例超过 50% 时要说明取样偏倚
+fixtures: fixtures/pangenome-composition/
+template: templates/R/pangenome-composition.R
+tests: pending

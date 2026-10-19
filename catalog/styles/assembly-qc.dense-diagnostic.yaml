@@ -1,0 +1,62 @@
+id: assembly-qc.dense-diagnostic
+archetype: assembly-qc
+label: Dense diagnostic
+status: draft
+preset: templates/presets/assembly-qc/dense-diagnostic.yaml
+template: templates/R/assembly-qc.R
+provenance:
+  support_n: 70
+  evidence:
+  - doi: 10.1038/s41586-023-05791-5
+    journal: Nature
+    year: 2023
+    figure: Extended Data Fig. 1
+    match_pos: 0
+    caption: K-mer and flow-cytometry based genome size estimation.a, Estimation of
+      nuclear genome size of V. faba Hedin/2 using flow cytometry. The histogram of
+      r…
+  - doi: 10.1038/s41588-026-02641-8
+    journal: Nature Genetics
+    year: 2026
+    figure: Fig. 5
+    match_pos: 0
+    caption: KMERIA methods accelerate the identification of genes associated with
+      agronomic traits in S.spontaneum.a, Morphological view of S. spontaneum with
+      det…
+  - doi: 10.1038/s41586-025-09065-0
+    journal: Nature
+    year: 2025
+    figure: Extended Data Fig. 1
+    match_pos: 3
+    caption: PanKmer Jaccard similarity matrix of 193 Cannabis genomes.PanKmer (PK)
+      was used to estimate the relationship between the genomes in the cannabis pange…
+  - doi: 10.1038/s41559-025-02941-y
+    journal: Nature Ecology & Evolution
+    year: 2026
+    figure: Extended Data Figure 1.
+    match_pos: 35
+    caption: Comparison of current and previous assembly statistics:a, BUSCO statistics
+      of current and previous genome assemblies. b, Assembly statistics of the tw…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#2F4B7C'
+  - '#6BAED6'
+  - '#A05195'
+  - '#D9D9D9'
+  grid: true
+  base_font_pt: 6.5
+  point_size: 1.2
+  panels: multi
+when_to_use: 补充图/Extended Data，全基因组扫描，信息密度优先
+avoid_when: 主图、幻灯片、需要强调单一结论时
+pitfalls:
+- 6 pt 以下字号印刷前必须复核
+- 灰底网格不要压过数据
+submission_safe: true
+cvd:
+  dE: '35.6'
+  deutan: '14.2'
+  protan: '13.1'
+  checked: '2026-10-19'

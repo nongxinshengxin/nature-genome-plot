@@ -1,0 +1,13 @@
+label: High contrast
+point_size: 0.9
+point_alpha: 0.95
+color_strand: true
+palette:
+- '#1F3B73'
+- '#B34700'
+single_color: '#4C78A8'
+grid: false
+base_size: 8
+axis_text: 7
+point_density: 300
+panel_border: true

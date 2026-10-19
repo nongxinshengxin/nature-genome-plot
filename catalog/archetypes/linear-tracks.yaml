@@ -1,0 +1,25 @@
+id: linear-tracks
+label: 线性基因组轨道（基因模型 + 多轨道）
+status: prototype
+implementation: ggplot2 + patchwork
+structures:
+- stacked
+- mirrored
+why: 局部区域的基因结构 + 覆盖度/GC/重复是功能验证图的标准三件套。
+inputs:
+  genes: '{file: genes.tsv, columns: {chrom: chr, start: int, end: int, strand: +/-
+    , name: chr}}'
+  tracks: '{file: tracks.tsv, columns: {chrom: chr, start: int, end: int, track: chr,
+    value: num}}'
+  region: '{file: region.tsv, columns: {chrom: chr, start: int, end: int}}'
+presets:
+- minimal-editorial
+- dense-diagnostic
+- high-contrast
+rules:
+- 基因标签按间隔抽稀，不能全标
+- 所有轨道共享 x 轴
+- 区域 < 50 kb 才画基因名
+fixtures: fixtures/linear-tracks/
+template: templates/R/linear-tracks.R
+tests: pending

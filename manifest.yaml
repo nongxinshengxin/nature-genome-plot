@@ -1,0 +1,42 @@
+name: nature-genome-plot
+version: 0.2.0
+status: active
+description: >
+  声明式加载清单。SKILL.md 先按 workflow 轴定位流程，再按 archetype 轴只读命中的图型与候选 style card。
+
+always_load:
+  - references/core/figure-grammar.md
+  - references/core/journal-specs.md
+
+axes:
+  workflow:
+    values:
+      new-figure: references/workflows/wf1-new-figure.md
+      adapt-data: references/workflows/wf2-adapt-data.md
+      restyle:    references/workflows/wf3-restyle.md
+      audit:      references/workflows/wf4-audit.md
+      browse:     references/workflows/wf5-browse.md
+    multi: false
+
+  archetype:
+    detect: catalog/index.yaml
+    path_template: catalog/archetypes/{id}.yaml
+    styles_template: catalog/styles/{id}.{preset}.yaml
+    max_loaded: 1
+
+  language:
+    default: r
+    allowed: [r, python]
+
+references:
+  decision_rules: references/core/decision-rules.md
+  checks:         references/checklists/figure-qa.md
+  contracts:      catalog/archetypes/
+  presets:        templates/presets/
+  fixtures:       fixtures/
+
+rules:
+  progressive_disclosure: true
+  never_load_whole_catalog: true
+  require_render_before_delivery: true
+  scripts_must_be_r_or_python: true

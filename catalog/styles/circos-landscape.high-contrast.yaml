@@ -1,0 +1,62 @@
+id: circos-landscape.high-contrast
+archetype: circos-landscape
+label: High contrast
+status: draft
+preset: templates/presets/circos-landscape/high-contrast.yaml
+template: templates/R/circos-landscape.R
+provenance:
+  support_n: 32
+  evidence:
+  - doi: 10.1038/s41467-026-68463-8
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 1
+    match_pos: 0
+    caption: Circos plot of genome assembly and annotation of FDDB.Switches between
+      light grey and dark grey on the chromosomes indicate gaps in the preliminary
+      as…
+  - doi: 10.1038/s41559-022-01980-z
+    journal: Nature Ecology & Evolution
+    year: 2023
+    figure: Extended Data Fig. 4
+    match_pos: 0
+    caption: Circos plot of protein-based homologous loci.a, P. pacificus vs. P. exspectatus.
+      b, P. pacificus vs. C. elegans. c, P. exspectatus vs. C. elegans. One…
+  - doi: 10.1038/s41467-023-37489-7
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 6
+    match_pos: 15
+    caption: GWAS in lablab.Circos plots showing the distribution of significant marker-trait
+      associations (MTA) identified in the lablab genome. Only significant …
+  - doi: 10.1038/s41588-025-02166-6
+    journal: Nature Genetics
+    year: 2025
+    figure: Fig. 4
+    match_pos: 37
+    caption: 'Genetic SVs of Malus pan-genome.a, A Circos plot of the ‘Fuji’ genome
+      with genomic features. From outer to inner tracks: (1–4) chromosomes, gene densi…'
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#0066CC'
+  - '#D9480F'
+  - '#0B7A45'
+  - '#8E44AD'
+  - '#B8860B'
+  grid: false
+  base_font_pt: 7
+  point_size: null
+  panels: single
+when_to_use: 汇报、预印本、低质量投影、可及性优先
+avoid_when: 需要精细明暗层次的连续量
+pitfalls:
+- 深色填充会压住数据点
+- 线宽过粗时小面板显脏
+submission_safe: true
+cvd:
+  dE: '35'
+  deutan: '12.2'
+  protan: '13.1'
+  checked: '2026-10-19'

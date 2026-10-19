@@ -1,0 +1,60 @@
+id: linear-tracks.high-contrast
+archetype: linear-tracks
+label: High contrast
+status: draft
+preset: templates/presets/linear-tracks/high-contrast.yaml
+template: templates/R/linear-tracks.R
+provenance:
+  support_n: 38
+  evidence:
+  - doi: 10.1038/s41467-026-75375-0
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 8
+    match_pos: 36
+    caption: MASH data portal with an integrated genome browser.a The integrated genome
+      browser, which allows researchers to explore all variants across chromosome…
+  - doi: 10.1038/s41559-025-02941-y
+    journal: Nature Ecology & Evolution
+    year: 2026
+    figure: Figure 4.
+    match_pos: 52
+    caption: Evolutionary conservation of pCREs in echinodermsa, Genome browser screenshot
+      around the P. miniata hh gene (LOC119729696) showing ATAC-seq tracks fro…
+  - doi: 10.1038/s41477-025-01989-9
+    journal: Nature Plants
+    year: 2025
+    figure: Extended Data Fig. 10
+    match_pos: 69
+    caption: Potential off-target mutations identified by whole genome sequencing.Genome
+      browser screenshot of the potential edits identified by whole genome seque…
+  - doi: 10.1038/s41467-025-67031-w
+    journal: Nature Communications
+    year: 2025
+    figure: Fig. 4
+    match_pos: 113
+    caption: Comprehensive analysis of gene identification and functional validation.a
+      An example of type Ⅰ error (fragmented gene models) corrected in structural
+      …
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#0066CC'
+  - '#D9480F'
+  - '#0B7A45'
+  grid: false
+  base_font_pt: 8
+  point_size: null
+  panels: multi
+when_to_use: 汇报、预印本、低质量投影、可及性优先
+avoid_when: 需要精细明暗层次的连续量
+pitfalls:
+- 深色填充会压住数据点
+- 线宽过粗时小面板显脏
+submission_safe: false
+cvd:
+  dE: '65.1'
+  deutan: '45.7'
+  protan: '29.7'
+  checked: '2026-10-19'

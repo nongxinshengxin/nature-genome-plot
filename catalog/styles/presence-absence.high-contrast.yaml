@@ -1,0 +1,57 @@
+id: presence-absence.high-contrast
+archetype: presence-absence
+label: High contrast
+status: draft
+preset: templates/presets/presence-absence/high-contrast.yaml
+template: templates/R/presence-absence.R
+provenance:
+  support_n: 60
+  evidence:
+  - doi: 10.1038/s41564-026-02435-y
+    journal: Nature Microbiology
+    year: 2026
+    figure: Extended Data Fig. 5
+    match_pos: 0
+    caption: Upset plot of orthogroups across orders.Plot shows the distribution and
+      overlap of orthogroups (clusters of orthologous genes) across different orders…
+  - doi: 10.1038/s41586-025-09637-0
+    journal: Nature
+    year: 2025
+    figure: Extended Data Fig. 7
+    match_pos: 11
+    caption: Heatmap of gene presence/absence in 1,086 Saccharomyces cerevisiae isolates.Rows
+      correspond to isolates, colored by ploidy, clade, and super clade, wh…
+  - doi: 10.1038/s41477-024-01713-z
+    journal: Nature Plants
+    year: 2024
+    figure: Fig. 3
+    match_pos: 12
+    caption: Synteny and PAV across four cotton genomes.a, Completely collinear (grey),
+      inverted (red) and PAV (white wedges) sequences are plotted on a common coo…
+  - doi: 10.1038/s41586-026-10229-9
+    journal: Nature
+    year: 2026
+    figure: Fig. 2
+    match_pos: 26
+    caption: Pangenome synteny map and PAV.a, Macrosynteny map. Syntenic blocks were
+      calculated from windowed alignments and converted to a riparian diagram. To
+      ai…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette: []
+  grid: false
+  base_font_pt: 7
+  point_size: null
+  panels: multi
+when_to_use: 汇报、预印本、低质量投影、可及性优先
+avoid_when: 需要精细明暗层次的连续量
+pitfalls:
+- 深色填充会压住数据点
+- 线宽过粗时小面板显脏
+submission_safe: true
+cvd:
+  dE: '35.6'
+  deutan: '14.2'
+  protan: '13.1'
+  checked: '2026-10-19'

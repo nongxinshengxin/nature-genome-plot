@@ -1,0 +1,7 @@
+rename:
+  CHR: chromosome
+  BP: position
+  P: p_value
+drop: [note, beta, se, SNP]
+chr_prefix: add
+drop_na: [P]

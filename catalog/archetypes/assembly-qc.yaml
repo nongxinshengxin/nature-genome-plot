@@ -1,0 +1,16 @@
+id: assembly-qc
+label: 组装质量（BUSCO + NGx）
+status: prototype
+implementation: ggplot2 + patchwork
+structures: [busco+ngx]
+why: 组装文章的标配质控图：完整度看 BUSCO，连续性看 NGx。
+inputs:
+  busco: {file: busco.tsv, columns: {assembly: chr, class: chr, percent: num}}
+  ngx: {file: ngx.tsv, columns: {assembly: chr, x: int, mb: num}}
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+rules:
+  - BUSCO 四类固定顺序，颜色固定，跨图一致
+  - NGx 曲线必须带图例或直接标注组装名
+fixtures: fixtures/assembly-qc/
+template: templates/R/assembly-qc.R
+tests: pending

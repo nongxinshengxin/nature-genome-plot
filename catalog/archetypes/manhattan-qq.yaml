@@ -1,0 +1,23 @@
+id: manhattan-qq
+label: Manhattan + QQ
+status: prototype
+implementation: ggplot2 + patchwork + ggrepel
+structures: [qq+manhattan, manhattan_only]
+
+why: >
+  GWAS/选择扫描的标准表达：全基因组信号一眼定位，QQ 图同时交代整体膨胀程度。
+
+inputs:
+  gwas: {file: gwas.tsv, columns: {CHR: chr, BP: int, P: num}, optional: [SNP, trait]}
+
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+
+rules:
+  - 无显著位点时不要画 locuszoom，改区域窗
+  - 阈值线默认 5e-8，非人类物种按作者声明改
+  - 交替配色只用两色，染色体多时不要每根一色
+  - lead SNP 标签最多 5 个，多了改表
+
+fixtures: fixtures/manhattan-qq/
+template: templates/R/manhattan-qq.R
+tests: pending

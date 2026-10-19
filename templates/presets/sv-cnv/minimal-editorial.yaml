@@ -1,0 +1,13 @@
+label: Minimal editorial
+palette:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+base_size: 7
+axis_text: 6
+grid: false
+line_width: 0.5
+bin_mb: 1.0
+fill_alpha: 0.75
+panel_border: true

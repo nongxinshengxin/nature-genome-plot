@@ -1,0 +1,17 @@
+label: High contrast
+palette:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+base_size: 8
+axis_text: 7
+grid: false
+gene_color: '#2C3E50'
+gene_lw: 1.8
+arrow_size: 0.12
+track_alpha: 1.0
+panel_border: true
+heights:
+- 1
+- 3
+label_every: 0

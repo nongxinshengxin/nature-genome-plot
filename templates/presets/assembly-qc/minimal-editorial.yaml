@@ -1,0 +1,17 @@
+label: Minimal editorial
+palette:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+lab_palette:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+base_size: 7
+axis_text: 6
+grid: false
+lwd: 0.8
+point_size: 1.2
+panel_border: true

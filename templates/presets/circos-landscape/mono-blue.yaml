@@ -1,0 +1,43 @@
+label: Mono blue
+bg: white
+sector_fill:
+- '#EDF3F8'
+sector_border: '#8FB3CC'
+chrom_cols:
+- '#08306B'
+- '#2171B5'
+- '#4292C6'
+- '#6BAED6'
+- '#9ECAE1'
+tracks:
+- key: gene
+  color: '#08306B'
+  type: h
+- key: te
+  color: '#4292C6'
+  type: h
+- key: gc
+  color: '#6BAED6'
+  type: l
+track_heights:
+- 0.06
+- 0.085
+- 0.085
+- 0.085
+gaps:
+- 2
+- 2
+- 2
+- 2
+- 7
+link_color_by: source
+link_color: '#2171B5'
+link_alpha: 0.28
+link_lwd: 0.55
+label_cex: 0.75
+label_font: 1
+label_offset: 1.6
+axis_cex: 0.5
+axis_col: '#5A7A93'
+grid: false
+border_lwd: 0.4

@@ -1,0 +1,25 @@
+id: population-structure
+label: 群体结构（PCA / ADMIXTURE）
+status: prototype
+implementation: ggplot2 + patchwork
+structures: [pca+admixture, pca_only]
+
+why: >
+  群体遗传与泛基因组论文的标配：左 PCA/UMAP 说「谁和谁像」，
+  右 ADMIXTURE 说「混了多少」。两图共享同一套群体配色，是跨面板一致性的典型场景。
+
+inputs:
+  pca: {file: pca.tsv, columns: {sample: chr, PC1: num, PC2: num, group: chr}}
+  admixture: {file: admixture.tsv, columns: {sample: chr, group: chr, K1..Kn: num}}
+
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+
+rules:
+  - n > 5000 且群体连续时，PCA 改密度等高线，不用散点
+  - K 的个数不超过 7，多了改补充图
+  - 群体配色跨面板必须一致（同一 group 同色）
+  - 样本顺序按 group 分组，ADMIXTURE 才读得懂
+
+fixtures: fixtures/population-structure/
+template: templates/R/population-structure.R
+tests: pending

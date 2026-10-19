@@ -1,0 +1,47 @@
+label: High contrast
+bg: white
+sector_fill:
+- '#DCE9F5'
+- '#FBE3D6'
+- '#DDF0E6'
+- '#EFE1F0'
+- '#FDF3D2'
+sector_border: '#4D4D4D'
+chrom_cols:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+- '#6E6E6E'
+tracks:
+- key: gene
+  color: '#005A9C'
+  type: h
+- key: te
+  color: '#C0392B'
+  type: h
+- key: gc
+  color: '#0E7C4A'
+  type: l
+track_heights:
+- 0.07
+- 0.1
+- 0.1
+- 0.1
+gaps:
+- 3
+- 3
+- 3
+- 3
+- 9
+link_color_by: source
+link_color: '#1F3B57'
+link_alpha: 0.45
+link_lwd: 0.8
+label_cex: 0.95
+label_font: 2
+label_offset: 1.7
+axis_cex: 0.55
+axis_col: '#333333'
+grid: false
+border_lwd: 0.6

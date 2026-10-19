@@ -1,0 +1,19 @@
+label: Dense diagnostic
+palette:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+- '#6E6E6E'
+point_size: 0.8
+point_alpha: 0.85
+grid: true
+base_size: 6.5
+axis_text: 5.5
+legend: right
+ellipse: true
+panel_border: true
+admix_border: white
+admix_lwd: 0.1
+pca_width: 1.0
+admix_width: 1.9

@@ -1,0 +1,14 @@
+label: Minimal editorial
+palette:
+- '#0072B2'
+- '#D55E00'
+base_size: 7
+axis_text: 6
+grid: false
+line_width: 0.5
+point_size: 0.35
+highlight: '#F2E3D5'
+threshold_fst: 0.25
+threshold_pi: null
+panel_border: true
+legend: none

@@ -1,0 +1,58 @@
+id: synteny.dense-diagnostic
+archetype: synteny
+label: Dense diagnostic
+status: draft
+preset: templates/presets/synteny/dense-diagnostic.yaml
+template: templates/R/synteny.R
+provenance:
+  support_n: 97
+  evidence:
+  - doi: 10.1038/s41477-024-01713-z
+    journal: Nature Plants
+    year: 2024
+    figure: Fig. 3
+    match_pos: 0
+    caption: Synteny and PAV across four cotton genomes.a, Completely collinear (grey),
+      inverted (red) and PAV (white wedges) sequences are plotted on a common coo…
+  - doi: 10.1038/s41467-024-54188-z
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 2
+    match_pos: 0
+    caption: Synteny and improvement of the T2T-goat1.0.a Syntenic and nonsyntenic
+      regions between ARS1 (top) without telomeres and T2T-goat1.0 (bottom) with telom…
+  - doi: 10.1038/s41467-025-64866-1
+    journal: Nature Communications
+    year: 2025
+    figure: Fig. 3
+    match_pos: 0
+    caption: Synteny and gene duplications across the 40 eggplant reference genomes.a
+      Synteny map of the 40 chromosome-scale eggplant accessions. On the left is sh…
+  - doi: 10.1038/s41559-022-01980-z
+    journal: Nature Ecology & Evolution
+    year: 2023
+    figure: Extended Data Fig. 3
+    match_pos: 0
+    caption: Dot plot of nucleotide-based comparative synteny across the genomes of
+      P. pacificus and P. exspectatus.Homologous single nucleotides downsized by 1/10…
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#2F4B7C'
+  - '#A05195'
+  grid: false
+  base_font_pt: 6.5
+  point_size: 0.3
+  panels: single
+when_to_use: 补充图/Extended Data，全基因组扫描，信息密度优先
+avoid_when: 主图、幻灯片、需要强调单一结论时
+pitfalls:
+- 6 pt 以下字号印刷前必须复核
+- 灰底网格不要压过数据
+submission_safe: true
+cvd:
+  dE: '97.3'
+  deutan: '94.8'
+  protan: '80.6'
+  checked: '2026-10-19'

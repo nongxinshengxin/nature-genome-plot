@@ -1,0 +1,16 @@
+label: High contrast
+palette:
+- '#1F3B73'
+- '#B34700'
+point_size: 0.8
+point_alpha: 1.0
+threshold: 5.0e-08
+threshold_color: '#B2182B'
+grid: false
+top_labels: 3
+qq_point_size: 0.5
+base_size: 8
+axis_text: 7
+lead_color: '#B2182B'
+chrom_gap: 0.008
+p_floor: 1.0e-50

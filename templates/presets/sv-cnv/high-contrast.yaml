@@ -1,0 +1,13 @@
+label: High contrast
+palette:
+- '#1F3B73'
+- '#B34700'
+- '#1B6B4A'
+- '#7D3C98'
+base_size: 8
+axis_text: 7
+grid: false
+line_width: 0.8
+bin_mb: 1.0
+fill_alpha: 0.9
+panel_border: true

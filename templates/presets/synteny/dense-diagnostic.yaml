@@ -1,0 +1,13 @@
+label: Dense diagnostic
+point_size: 0.3
+point_alpha: 0.8
+color_strand: true
+palette:
+- '#1F3B73'
+- '#B34700'
+single_color: '#4C78A8'
+grid: false
+base_size: 6.5
+axis_text: 5.5
+point_density: 900
+panel_border: true

@@ -1,0 +1,51 @@
+id: circos-landscape
+label: 环形基因组全景 / 弦图
+aliases: [circos, chord diagram, genome circle, circular genome plot]
+status: prototype
+implementation: circlize            # 所有风格共用一套模板，只换 preset
+structures: [circular]
+
+why: >
+  一张图同时表达「染色体尺度的组成」与「区域之间的关系」：组成走轨道，
+  关系走弦。泛基因组的区块共享、共线性片段、SV 介导的交换、选择信号热点
+  都用这一张图收口。
+
+inputs:
+  chrom:
+    file: chrom.tsv
+    columns: {chrom: chr, start: int, end: int}
+  tracks:
+    file: tracks.tsv
+    columns: {chrom: chr, start: int, end: int, track: chr, value: num}
+    supported: [gene, te, gc]        # 可扩展；preset 里声明颜色与画法
+  links:
+    file: links.tsv
+    columns: {chrom1: chr, start1: int, end1: int, chrom2: chr, start2: int, end2: int, value: num}
+    optional: true
+
+presets:
+  - minimal-editorial   # 主图，细线低饱和
+  - dense-diagnostic    # 补充图，网格+高密度
+  - high-contrast       # 汇报/低质量投影
+  - soft-pastel         # 柔和多色
+  - mono-blue           # 单色系，适合单栏小图
+  - warm-editorial      # 暖色系，植物/生态题材
+
+params:
+  - track_heights       # 每环高度
+  - gaps                # sector 间隙
+  - link_color_by       # source | target | single
+  - link_alpha          # 0-1
+  - label_cex/font/offset
+  - grid                # 轨道内网格
+  - sector_fill         # 单色或按染色体着色
+
+rules:
+  - chrom 数 > 40 时不要用本图型，改线性轨道
+  - links 超过 ~30 条时会糊，按 value 取 top N 或合并区间
+  - 弦宽由区间宽度决定，演示/发表时区间取 0.5-2 Mb 量级才看得见
+  - 染色体命名必须统一（chr1 vs 1），否则 sector 顺序错乱
+
+fixtures: fixtures/circos/
+template: templates/R/circos-landscape.R
+tests: pending

@@ -1,0 +1,17 @@
+id: selection-scan
+label: 选择清除（Fst / π 轨道）
+status: prototype
+implementation: ggplot2 (facet)
+structures: [two_tracks, composite]
+why: Fst 峰 + π 谷是选择清除的经典签名，候选区用底色标出。
+inputs:
+  windows: {file: windows.tsv, columns: {chrom: chr, start: int, end: int, fst: num, pi: num}}
+  regions: {file: regions.tsv, columns: {chrom: chr, start: int, end: int, label: chr}, optional: true}
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+rules:
+  - 窗口 < 10 kb 必须平滑，否则锯齿不可读
+  - 候选区不超过 3 个，多了改补充图
+  - Fst 阈值线只在 Fst 面板出现
+fixtures: fixtures/selection-scan/
+template: templates/R/selection-scan.R
+tests: pending

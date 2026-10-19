@@ -1,0 +1,22 @@
+id: sv-cnv
+label: 结构变异全景（密度 + 长度谱 + 频率）
+status: prototype
+implementation: ggplot2 + patchwork
+structures:
+- genome-wide
+- locus
+why: SV 的数量、长度和频率分布是最常被审稿人要求补的三张图，合并成一张最省版面。
+inputs:
+  sv: '{file: sv.tsv, columns: {chrom: chr, start: int, end: int, type: chr, length:
+    int, af: num}}'
+presets:
+- minimal-editorial
+- dense-diagnostic
+- high-contrast
+rules:
+- 长度用 log10 轴
+- 类型配色固定（DEL/INS/INV/DUP）
+- 密度 bin 至少 1 Mb，否则噪声大
+fixtures: fixtures/sv-cnv/
+template: templates/R/sv-cnv.R
+tests: pending

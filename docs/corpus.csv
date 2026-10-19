@@ -1,0 +1,201 @@
+journal,year,doi,pmid,pmcid,title,cited_by,score,license
+Nature,2024,10.1038/s41586-024-08187-1,39537924,PMC11655362,Structural variation in the pangenome of wild and domesticated barley.,126,14.0,cc by-nc-nd
+Nature,2025,10.1038/s41586-024-08476-9,39843749,PMC11981936,Leveraging a phased pangenome for haplotype design of hybrid potato.,52,12.95,cc by-nc-nd
+Nature,2025,10.1038/s41586-025-09637-0,41094142,PMC12711572,"From genotype to phenotype with 1,086 near telomere-to-telomere yeast genomes.",27,11.39,cc by-nc-nd
+Nature,2023,10.1038/s41586-023-05896-x,37165242,PMC10172123,A draft human pangenome reference.,1200,11.0,cc by
+Nature,2026,10.1038/s41586-026-10105-6,41639459,PMC13070018,Efficient near-telomere-to-telomere assembly of nanopore simplex reads.,53,10.96,cc by-nc-nd
+Nature,2025,10.1038/s41586-025-08843-0,40240601,PMC12158759,The phased pan-genome of tetraploid European potato.,38,10.68,cc by
+Nature,2026,10.1038/s41586-026-10229-9,41813899,PMC13128447,A sorghum pangenome reference improves global crop trait discovery.,10,10.58,cc by-nc-nd
+Nature,2025,10.1038/s41586-025-09065-0,40437092,PMC12286863,Domesticated cannabinoid synthases amid a wild mosaic cannabis pangenome.,29,10.45,cc by
+Nature,2025,10.1038/s41586-025-09290-7,40702182,PMC12350158,"Structural variation in 1,019 diverse humans based on long-read sequencing.",87,10.39,cc by
+Nature,2023,10.1038/s41586-023-06173-7,37316654,PMC10322713,A pangenome reference of 36 Chinese populations.,160,10.0,cc by
+Nature,2023,10.1038/s41586-023-06034-3,37198478,PMC10208981,GWAS and meta-analysis identifies 49 genetic variants underlying critical COVID-19.,196,10.0,cc by
+Nature,2025,10.1038/s41586-025-08883-6,40240605,PMC12176639,A pangenome reference of wild and cultivated rice.,51,9.93,cc by-nc-nd
+Nature,2025,10.1038/s41586-025-09140-6,40702183,PMC12350169,Complex genetic variation in nearly complete human genomes.,142,9.5,cc by
+Nature,2026,10.1038/s41586-026-10563-y,42045451,PMC13323052,Telomere-to-telomere assembly using HERRO-corrected Nanopore Simplex reads.,29,9.45,cc by-nc-nd
+Nature,2023,10.1038/s41586-023-06842-7,38093003,PMC10733147,The landscape of genomic structural variation in Indigenous Australians.,38,9.18,cc by
+Nature,2023,10.1038/s41586-023-05962-4,37076623,PMC10132985,Mirusviruses link herpesviruses to giant viruses.,103,9.0,cc by
+Nature,2026,10.1038/s41586-026-10315-y,41922767,PMC13233627,The 1000 Chinese Pangenome empowers medical and population genetics.,3,8.7,cc by-nc-nd
+Nature,2024,10.1038/s41586-024-07788-0,39112710,PMC11390486,Teosinte Pollen Drive guides maize diversification and domestication by RNAi.,18,8.56,cc by
+Nature,2023,10.1038/s41586-023-05976-y,37165241,PMC10172130,Recombination between heterologous human acrocentric chromosomes.,130,8.0,cc by
+Nature,2024,10.1038/s41586-023-06893-w,38172637,PMC10808065,Host genetic regulation of human gut microbial structural variation.,160,8.0,cc by
+Nature,2024,10.1038/s41586-024-07324-0,38658746,PMC11111409,Phylogenomics and the rise of the angiosperms.,318,8.0,cc by
+Nature,2024,10.1038/s41586-023-06865-0,38200295,PMC10781627,Population genomics of post-glacial western Eurasia.,136,8.0,cc by
+Nature,2024,10.1038/s41586-024-07263-w,38632397,PMC11041799,Hybrid speciation driven by multilocus introgression of ecological traits.,82,7.84,cc by
+Nature,2026,10.1038/s41586-025-09676-7,41162711,PMC12727504,A pangenome and pantranscriptome of hexaploid oat.,13,7.79,cc by
+Nature,2026,10.1038/s41586-025-09722-4,41225002,PMC12804077,Convergent genome evolution shaped the emergence of terrestrial animals.,8,7.41,cc by
+Nature,2026,10.1038/s41586-025-10071-5,41606345,PMC13043309,Pre-assembly of biomolecular condensate seeds drives RSV replication.,8,7.41,cc by-nc-nd
+Nature,2023,10.1038/s41586-023-06560-0,37821706,PMC10600006,Mexican Biobank advances population and medical genomics of diverse ancestries.,137,7.0,cc by
+Nature,2023,10.1038/s41586-023-05791-5,36890232,PMC10033403,The giant diploid faba genome unlocks variation in a global protein crop.,123,7.0,cc by
+Nature,2024,10.1038/s41586-024-07473-2,38811727,PMC11168930,The complete sequence and comparative analysis of ape sex chromosomes.,142,7.0,cc by
+Nature,2024,10.1038/s41586-024-07070-3,38262590,PMC10972751,The hagfish genome and the evolution of vertebrates.,108,6.0,cc by
+Nature Communications,2025,10.1038/s41467-025-62641-w,40770196,PMC12328705,Lactuca super-pangenome provides insights into lettuce genome evolution and domestication.,7,18.31,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-54188-z,39567477,PMC11579321,Telomere-to-telomere genome assembly of a male goat reveals variants associated with cashmere traits.,28,17.92,cc by
+Nature Communications,2025,10.1038/s41467-025-58081-1,40180959,PMC11968974,GWAS meta-analysis using a graph-based pan-genome enhanced gene mining efficiency for agronomic traits in rice.,23,16.26,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-68807-4,41617692,PMC12960718,Phased-assembly-driven pangenome graphs for structural variant genotyping and complex trait mapping in dairy cattle.,4,15.9,cc by
+Nature Communications,2024,10.1038/s41467-024-44980-2,38253606,PMC10803329,Pangenome graphs improve the analysis of structural variants in rare genetic diseases.,33,14.06,cc by
+Nature Communications,2025,10.1038/s41467-025-67060-5,41353212,PMC12796203,Pangenome analyses of tea plants reveal structural variations driving gene expression alterations and agronomic trait diversification.,8,13.41,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-43270-7,37968318,PMC10651928,Pan-genome analysis of 13 Malus accessions reveals structural and sequence variations associated with fruit traits.,47,13.36,cc by
+Nature Communications,2024,10.1038/s41467-024-53718-z,39472552,PMC11522667,Analyzes of pan-genome and resequencing atlas unveil the genetic basis of jujube domestication.,13,13.29,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-75953-2,42642402,PMC13507216,Two telomere-to-telomere Nelumbo genome assemblies reveal domestication history and empower precision breeding.,1,13.1,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-75219-x,42399265,PMC13469606,Pangenome-based structural variant imputation enables large-scale genotype-phenotype studies in dairy cattle.,1,13.1,cc by
+Nature Communications,2025,10.1038/s41467-025-59983-w,40399334,PMC12095648,Reveal genomic insights into cotton domestication and improvement using gene level functional haplotype-based GWAS.,11,12.66,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-37004-y,36944612,PMC10030860,Pan-genome inversion index reveals evolutionary insights into the subpopulation structure of Asian rice.,63,12.61,cc by
+Nature Communications,2026,10.1038/s41467-026-69764-8,41730891,PMC13039718,Sub-pangenome analysis reveals structural variants associated with fruit color and bacterial wilt resistance in eggplant.,0,12.5,cc by
+Nature Communications,2024,10.1038/s41467-024-51032-2,39107305,PMC11303546,Adaptive gene loss in the common bean pan-genome during range expansion and domestication.,28,11.92,cc by
+Nature Communications,2025,10.1038/s41467-025-58684-8,40234401,PMC12000612,Correcting for volunteer bias in GWAS increases SNP effect sizes and heritability estimates.,12,11.73,cc by
+Nature Communications,2023,10.1038/s41467-023-41220-x,37726270,PMC10509194,Evolutionary origin of genomic structural variations in domestic yaks.,56,11.51,cc by
+Nature Communications,2026,10.1038/s41467-026-77194-9,42754592,PMC13586383,European ash pangenome reveals widespread structural variation and genetic basis of low ash dieback susceptibility.,0,11.5,cc by
+Nature Communications,2025,10.1038/s41467-025-60254-x,40442108,PMC12122945,Pangenome analysis reveals yield- and fiber-related diversity and interspecific gene flow in Gossypium barbadense L.,21,11.18,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-49679-y,38918389,PMC11199601,Impact of whole-genome duplications on structural variant evolution in Cochlearia.,37,11.16,cc by
+Nature Communications,2026,10.1038/s41467-026-73494-2,42161975,PMC13381921,Pan-genome analysis uncovers extensive structural variations in Africa's indigenous legume crop cowpea.,1,11.1,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-37489-7,37069152,PMC10110558,Chromosome-level genome assembly and population genomic resource to accelerate orphan crop lablab breeding.,33,11.06,cc by
+Nature Communications,2023,10.1038/s41467-023-42029-4,37802986,PMC10558531,The pan-genome and local adaptation of Arabidopsis thaliana.,129,11.0,cc by
+Nature Communications,2023,10.1038/s41467-023-41251-4,37679363,PMC10484947,Genomes of cultivated and wild Capsicum species provide insights into pepper domestication and population differentiation.,93,10.95,cc by
+Nature Communications,2023,10.1038/s41467-023-41023-0,37640706,PMC10462705,Extrachromosomal circular DNA and structural variants highlight genome instability in Arabidopsis epigenetic mutants.,48,10.38,cc by
+Nature Communications,2025,10.1038/s41467-025-65779-9,41315227,PMC12663572,Genome graphs reveal the importance of structural variation in Mycobacterium tuberculosis evolution and drug resistance.,6,10.19,cc by
+Nature Communications,2026,10.1038/s41467-026-68378-4,41577710,PMC12909954,Using the linear references from the pangenome to discover missing autism variants.,6,10.19,cc by
+Nature Communications,2025,10.1038/s41467-025-66771-z,41365878,PMC12695980,PP-GWAS: Privacy Preserving Multi-Site Genome-wide Association Studies.,1,10.1,cc by
+Nature Communications,2025,10.1038/s41467-025-65870-1,41339345,PMC12675626,Telomere-to-telomere genome assembly of the Dipteran Bactrocera dorsalis from a single individual.,1,10.1,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-54427-3,39557856,PMC11574199,Genome evolution and diversity of wild and cultivated rice species.,32,10.04,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-39253-3,37429843,PMC10333277,Genome-wide association analysis and Mendelian randomization proteomics identify drug targets for heart failure.,124,10.0,cc by
+Nature Communications,2023,10.1038/s41467-023-41180-2,37794016,PMC10550990,European and multi-ancestry genome-wide association meta-analysis of atopic dermatitis highlights importance of systemic immune regulation.,118,10.0,cc by
+Nature Communications,2023,10.1038/s41467-023-44079-0,38104120,PMC10725455,Genome-wide association study meta-analysis of blood pressure traits and hypertension in sub-Saharan African populations: an AWI-Gen study.,29,9.95,cc by
+Nature Communications,2023,10.1038/s41467-023-40901-x,37626063,PMC10457329,Whole genomic analysis reveals atypical non-homologous off-target large structural variants induced by CRISPR-Cas9-mediated genome editing.,28,9.92,cc by
+Nature Communications,2024,10.1038/s41467-024-53620-8,39496583,PMC11535549,A Catalogue of Structural Variation across Ancestrally Diverse Asian Genomes.,8,9.91,cc by
+Nature Communications,2023,10.1038/s41467-023-40407-6,37567866,PMC10421919,Subtelomeric 5-enolpyruvylshikimate-3-phosphate synthase copy number variation confers glyphosate resistance in Eleusine indica.,27,9.89,cc by
+Nature Communications,2025,10.1038/s41467-025-61645-w,40707445,PMC12290100,A draft UAE-based Arab pangenome reference.,12,9.73,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-43626-z,38016956,PMC10684552,"Global genetic diversity, introgression, and evolutionary adaptation of indicine cattle revealed by whole genome sequencing.",63,9.61,cc by
+Nature Communications,2025,10.1038/s41467-025-64866-1,41219210,PMC12606238,Graph-based pangenomes and pan-phenome provide a cornerstone for eggplant biology and breeding.,10,9.58,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-025-68026-3,41578138,PMC12868874,Pangenome dynamics and population structure of the zoonotic pathogen Salmonella enterica serotype Hadar.,0,9.5,cc by
+Nature Communications,2026,10.1038/s41467-026-75205-3,42426026,PMC13482097,"Assembly of Silphium interspecific hybrid genomes opens the genus to phylogenomics, ecogenomics, and molecular breeding.",2,9.45,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-70026-w,41748614,PMC13056911,Population genomics reveals association of transposable elements variants with climatic adaptation in wild Amur grape.,2,9.45,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-58789-0,40229280,PMC11997036,Genome-wide association study identifies common variants associated with breast cancer in South African Black women.,8,9.41,cc by
+Nature Communications,2023,10.1038/s41467-023-37985-w,37120605,PMC10148875,Multi-population genome-wide association study implicates immune and non-immune factors in pediatric steroid-sensitive nephrotic syndrome.,47,9.36,cc by
+Nature Communications,2025,10.1038/s41467-025-59950-5,40436827,PMC12120081,Genome-wide association studies in a large Korean cohort identify quantitative trait loci for 36 traits and illuminate their genetic architectures.,26,9.36,cc by
+Nature Communications,2024,10.1038/s41467-024-49913-7,38977688,PMC11231334,Copy number variation introduced by a massive mobile element facilitates global thermal adaptation in a fungal wheat pathogen.,44,9.31,cc by
+Nature Communications,2023,10.1038/s41467-023-42997-7,37973916,PMC10654443,Gut microbial structural variation associates with immune checkpoint inhibitor response.,42,9.27,cc by
+Nature Communications,2023,10.1038/s41467-023-39136-7,37340002,PMC10282036,Pan-cancer and cross-population genome-wide association studies dissect shared genetic backgrounds underlying carcinogenesis.,41,9.25,cc by
+Nature Communications,2023,10.1038/s41467-023-40304-y,37532727,PMC10397287,Genomic insight into domestication of rubber tree.,40,9.23,cc by
+Nature Communications,2025,10.1038/s41467-025-57457-7,40164586,PMC11958696,A genome-wide association study of imaging-defined atherosclerosis.,16,8.96,cc by
+Nature Communications,2023,10.1038/s41467-023-36544-7,36788230,PMC9929290,Quantifying portable genetic effects and improving cross-ancestry genetic prediction with GWAS summary statistics.,72,8.73,cc by
+Nature Communications,2025,10.1038/s41467-025-62777-9,40817095,PMC12356954,Population structure in a fungal human pathogen is potentially linked to pathogenicity.,11,8.66,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-62887-4,40819063,PMC12357961,Pangenome analysis of transposable element insertion polymorphisms reveals features underlying cold tolerance in rice.,11,8.66,cc by
+Nature Communications,2023,10.1038/s41467-023-42161-1,37857610,PMC10587341,De novo genome assembly depicts the immune genomic characteristics of cattle.,20,8.64,cc by
+Nature Communications,2026,10.1038/s41467-026-72832-8,42204142,PMC13216308,Pangenome and resequencing analyses reveal flowering evolution and genetic control in Cerasus.,0,8.5,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-76055-9,42706246,PMC13550467,Analysis of deep-resequencing data of 984 soybean accessions reveals structural variations underlying agronomic traits.,0,8.5,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-025-67763-9,41530136,PMC12847811,The biomedical landscape of genomic structural variation in the qatari population.,0,8.5,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-74508-9,42303977,PMC13429737,Mapping structural variants in Populus tomentosa reveals adaptive signatures and improves prediction of wood properties.,0,8.5,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-68463-8,41535305,PMC12913673,The Camellia sinensis var. sinensis cv. Fuding Dabaicha genome unveils structural variation-driven metabolic innovation.,0,8.5,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-46817-4,38531894,PMC10965919,Abundant pleiotropy across neuroimaging modalities identified through a multivariate genome-wide association study.,16,8.46,cc by
+Nature Communications,2024,10.1038/s41467-024-52236-2,39266554,PMC11393459,"Genome-wide association studies of thyroid-related hormones, dysfunction, and autoimmunity among 85,421 Chinese pregnancies.",16,8.46,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-69076-x,41680155,PMC13009277,Digitaria genome analyses indicate introgression may drive local adaptation and herbicide resistance.,2,8.45,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-58543-6,40223094,PMC11994774,Genomic data reveal a north-south split and introgression history of blood fluke populations across Africa.,8,8.41,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-59949-y,40419521,PMC12106753,Whole-genome sequencing analyses suggest novel genetic factors associated with Alzheimer's disease and a cumulative effects model for risk liability.,8,8.41,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-67031-w,41339366,PMC12789591,Near complete assembly of Drosophila melanogaster Canton S strain genome.,8,8.41,cc by-nc-nd
+Nature Communications,2023,10.1038/s41467-023-41210-z,37689771,PMC10492844,ADuLT: An efficient and robust time-to-event GWAS.,45,8.33,cc by
+Nature Communications,2023,10.1038/s41467-023-41374-8,37704602,PMC10499989,Global impact of somatic structural variation on the cancer proteome.,41,8.25,cc by
+Nature Communications,2025,10.1038/s41467-025-62692-z,40998788,PMC12462482,The genetic diversity of Indonesian cattle has been shaped by multiple introductions and adaptive introgression.,6,8.19,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-69236-z,41690969,PMC13021989,Combining xQTL and genome-wide association studies from diverse populations improves druggable gene discovery.,1,8.1,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-51276-y,39117669,PMC11310301,The DNA methylome of pediatric brain tumors appears shaped by structural variation and predicts survival.,10,8.08,cc by-nc-nd
+Nature Communications,2025,10.1038/s41467-025-66445-w,41271743,PMC12644504,Domestication shaped the chromatin landscape of grain amaranth.,5,8.06,cc by
+Nature Communications,2023,10.1038/s41467-023-40434-3,37612277,PMC10447580,Accurate haplotype construction and detection of selection signatures enabled by high quality pig genome sequences.,31,8.01,cc by
+Nature Communications,2024,10.1038/s41467-024-54667-3,39604397,PMC11603351,Population genomics of Plasmodium ovale species in sub-Saharan Africa.,9,8.0,cc by
+Nature Communications,2024,10.1038/s41467-024-48787-z,38789482,PMC11126685,Phylogenomics reveals the evolutionary origins of lichenization in chlorophyte algae.,30,7.98,cc by
+Nature Communications,2025,10.1038/s41467-025-64046-1,41053037,PMC12501010,De novo annotation reveals transcriptomic complexity across the hexaploid wheat pan-genome.,16,7.96,cc by
+Nature Communications,2024,10.1038/s41467-024-53852-8,39532856,PMC11557891,Leveraging ancient DNA to uncover signals of natural selection in Europe lost due to admixture or drift.,21,7.68,cc by
+Nature Communications,2024,10.1038/s41467-024-55195-w,39738013,PMC11685423,MaizeCODE reveals bi-directionally expressed enhancers that harbor molecular signatures of maize domestication.,21,7.68,cc by
+Nature Communications,2023,10.1038/s41467-023-41764-y,37803007,PMC10558525,Phylogenomics reveals the history of host use in mosquitoes.,59,7.56,cc by
+Nature Communications,2024,10.1038/s41467-024-52376-5,39278956,PMC11402969,Haplotype-based pangenomes reveal genetic variations and climate adaptations in moso bamboo populations.,18,7.56,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-51031-3,39174505,PMC11341782,Pan-genome and phylogenomic analyses highlight Hevea species delineation and rubber trait evolution.,18,7.56,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-50297-x,39048560,PMC11269703,"Causal relevance of different blood pressure traits on risk of cardiovascular diseases: GWAS and Mendelian randomisation in 100,000 Chinese adults.",17,7.51,cc by
+Nature Communications,2026,10.1038/s41467-026-74682-w,42321213,PMC13434474,A domestication gene links plant architecture and nitrogen metabolism to enhance yield in foxtail millet.,0,7.5,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-73694-w,42277005,PMC13261055,Genome-wide association study of cocaine self-administration behavior in Heterogeneous Stock rats.,0,7.5,cc by
+Nature Communications,2026,10.1038/s41467-026-75525-4,42649157,PMC13518807,The influence of structural variants from 2445 pigs on gene expression and complex traits.,0,7.5,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-54915-6,39639029,PMC11621345,Population genomics and transcriptomics of Plasmodium falciparum in Cambodia and Vietnam uncover key components of the artemisinin resistance genetic background.,15,7.41,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-53829-7,39487120,PMC11530686,Distinct Escherichia coli transcriptional profiles in the guts of recurrent UTI sufferers revealed by pangenome hybrid selection.,14,7.35,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-52687-7,39366947,PMC11452379,Genomic and phenotypic imprints of microbial domestication on cheese starter cultures.,12,7.23,cc by-nc-nd
+Nature Communications,2024,10.1038/s41467-024-52027-9,39266513,PMC11393467,Impact and characterization of serial structural variations across humans and great apes.,12,7.23,cc by
+Nature Communications,2026,10.1038/s41467-026-75375-0,42486871,PMC13392358,VN1K is a pangenome-informed multi-omics and phenomics resource for the Vietnamese population.,1,7.1,cc by-nc-nd
+Nature Communications,2026,10.1038/s41467-026-74742-1,42364992,PMC13473609,Haplotype-resolved genome assembly sheds light on the evolutionary history of autohexaploid Tripidium arundinaceum.,1,7.1,cc by
+Nature Communications,2024,10.1038/s41467-024-54719-8,39613758,PMC11607401,Y chromosome introgression between deeply divergent primate species.,10,7.08,cc by
+Nature Ecology & Evolution,2024,10.1038/s41559-024-02329-4,38383850,PMC11009112,Comparative genomics reveals the dynamics of chromosome evolution in Lepidoptera.,307,10.0,cc by
+Nature Ecology & Evolution,2023,10.1038/s41559-023-02145-2,37500909,PMC10482688,Ghost admixture in eastern gorillas.,31,9.01,cc by
+Nature Ecology & Evolution,2023,10.1038/s41559-022-01952-3,36646948,PMC9911347,Ancient DNA reveals admixture history and endogamy in the prehistoric Aegean.,50,7.42,cc by
+Nature Ecology & Evolution,2025,10.1038/s41559-025-02643-5,40155778,PMC11976285,Adaptive genomic signatures of globally invasive populations of the yellow fever mosquito Aedes aegypti.,27,6.39,cc by-nc-nd
+Nature Ecology & Evolution,2026,10.1038/s41559-026-03062-w,42120682,PMC13345961,Population genomics of yellow-eyed penguins uncovers subspecies divergence and candidate genes linked to respiratory distress syndrome.,1,6.1,cc by-nc-nd
+Nature Ecology & Evolution,2024,10.1038/s41559-023-02299-z,38216617,PMC10927551,Hagfish genome elucidates vertebrate whole-genome duplication events and their evolutionary consequences.,117,6.0,cc by
+Nature Ecology & Evolution,2023,10.1038/s41559-022-01980-z,36717742,PMC9998273,Chromosome fusions repatterned recombination rate and facilitated reproductive isolation during Pristionchus nematode speciation.,73,5.74,cc by
+Nature Ecology & Evolution,2024,10.1038/s41559-024-02357-0,38443606,PMC11090817,A global survey of prokaryotic genomes reveals the eco-evolutionary pressures driving horizontal gene transfer.,70,5.7,cc by
+Nature Ecology & Evolution,2025,10.1038/s41559-025-02785-6,40634695,PMC12420386,Cross-kingdom comparative genomics reveal the metabolic potential of fungi for lignin turnover in deadwood.,3,5.7,cc by-nc-nd
+Nature Ecology & Evolution,2023,10.1038/s41559-023-02027-7,37012375,PMC10172124,A social niche breadth score reveals niche range strategies of generalists and specialists.,108,5.0,cc by
+Nature Ecology & Evolution,2025,10.1038/s41559-025-02711-w,40461811,PMC12148925,"Shotgun sequencing of airborne eDNA achieves rapid assessment of whole biomes, population genetics and genomic variation.",12,4.73,cc by-nc-nd
+Nature Ecology & Evolution,2024,10.1038/s41559-023-02243-1,37932383,PMC10781644,The genomics and evolution of inter-sexual mimicry and female-limited polymorphisms in damselflies.,21,4.68,cc by
+Nature Ecology & Evolution,2025,10.1038/s41559-025-02751-2,40629086,PMC12328208,Haploblocks contribute to parallel climate adaptation following global invasion of a cosmopolitan plant.,7,4.31,cc by
+Nature Ecology & Evolution,2026,10.1038/s41559-025-02941-y,41501227,PMC13317027,Deep conservation of cis-regulatory elements and chromatin organization in echinoderms uncover ancestral regulatory features of animal genomes.,8,3.41,cc by
+Nature Ecology & Evolution,2026,10.1038/s41559-025-02904-3,41326607,PMC12789038,Core rumen microbes are functional generalists that sustain host metabolism and gut ecosystem function.,20,3.14,cc by-nc-nd
+Nature Genetics,2024,10.1038/s41588-024-01823-6,38977857,PMC11319210,Telomere-to-telomere Citrullus super-pangenome provides direction for watermelon breeding.,55,16.5,cc by
+Nature Genetics,2023,10.1038/s41588-023-01571-z,38036791,PMC10703678,Pangenome analysis reveals genomic variations associated with domestication traits in broomcorn millet.,61,15.58,cc by
+Nature Genetics,2023,10.1038/s41588-023-01340-y,37024581,PMC10181942,Super-pangenome analyses highlight genomic diversity and structural variation across wild and cultivated tomato species.,230,15.0,cc by
+Nature Genetics,2025,10.1038/s41588-025-02137-x,40195562,PMC11985340,A telomere-to-telomere genome assembly coupled with multi-omic data provides insights into the evolution of hexaploid bread wheat.,55,15.0,cc by-nc-nd
+Nature Genetics,2025,10.1038/s41588-025-02170-w,40295880,PMC12081311,Pangenome analysis reveals structural variation associated with seed size and weight traits in peanut.,33,14.56,cc by-nc-nd
+Nature Genetics,2026,10.1038/s41588-026-02612-z,42156564,PMC13263140,Genome-wide associations of structural variants with human traits through imputation from long-read assemblies.,7,14.31,cc by-nc-nd
+Nature Genetics,2024,10.1038/s41588-024-01967-5,39496880,PMC11631756,Grapevine pangenome facilitates trait genetics and genomic breeding.,95,13.96,cc by-nc-nd
+Nature Genetics,2023,10.1038/s41588-023-01302-4,36864101,PMC10011142,Pangenomic analysis identifies structural variation associated with heat tolerance in pearl millet.,113,13.0,cc by
+Nature Genetics,2025,10.1038/s41588-025-02166-6,40240877,PMC12081284,Pan-genome analysis reveals the evolution and diversity of Malus.,19,12.1,cc by-nc-nd
+Nature Genetics,2026,10.1038/s41588-026-02678-9,42486906,PMC13447107,A pangenome of tetraploid wheat reveals the genetic architecture underlying domestication and genomic diversity for breeding.,1,12.1,cc by
+Nature Genetics,2025,10.1038/s41588-025-02113-5,40033060,PMC11985339,The genomic landscape of gene-level structural variations in Japanese and global soybean Glycine max cultivars.,17,12.01,cc by-nc-nd
+Nature Genetics,2023,10.1038/s41588-023-01459-y,37524789,PMC10412453,Telomere-to-telomere assemblies of 142 strains characterize the genome structural landscape in Saccharomyces cerevisiae.,132,12.0,cc by
+Nature Genetics,2023,10.1038/s41588-023-01419-6,37322109,PMC10335936,A complete telomere-to-telomere assembly of the maize genome.,278,12.0,cc by
+Nature Genetics,2025,10.1038/s41588-025-02346-4,41107550,PMC12597824,Genotyping sequence-resolved copy number variation using pangenomes reveals paralog-specific global diversity and expression divergence of duplicated genes.,6,11.19,cc by-nc-nd
+Nature Genetics,2023,10.1038/s41588-023-01423-w,37291196,PMC10335933,A graph-based genome and pan-genome variation of the model plant Setaria.,171,11.0,cc by
+Nature Genetics,2024,10.1038/s41588-024-01655-4,38351383,PMC10937405,Large-scale gene expression alterations introduced by structural variation drive morphotype diversification in Brassica oleracea.,82,10.84,cc by
+Nature Genetics,2024,10.1038/s41588-024-01957-7,39501128,PMC11549052,"Structural variation reshapes population gene expression and trait variation in 2,105 Brassica napus accessions.",62,10.6,cc by-nc-nd
+Nature Genetics,2023,10.1038/s41588-023-01540-6,37945902,PMC10703688,Most large structural variants in cancer genomes can be detected without long reads.,48,10.38,cc by
+Nature Genetics,2026,10.1038/s41588-026-02682-z,42481758,PMC13447089,Pangenome-resolved structural variation drives adaptation and trait evolution in cucumber.,1,10.1,cc by-nc-nd
+Nature Genetics,2025,10.1038/s41588-025-02087-4,39966646,PMC11906354,Large-scale genome-wide association analyses identify novel genetic loci and mechanisms in hypertrophic cardiomyopathy.,61,10.08,cc by
+Nature Genetics,2024,10.1038/s41588-024-01715-9,38605175,PMC11096106,A pan-genome of 69 Arabidopsis thaliana accessions reveals a conserved genome structure throughout the global species range.,132,10.0,cc by
+Nature Genetics,2024,10.1038/s41588-023-01596-4,38177345,PMC10864182,"Multi-ancestry genome-wide association study of major depression aids locus discovery, fine mapping, gene prioritization and causal inference.",186,10.0,cc by
+Nature Genetics,2023,10.1038/s41588-023-01410-1,37248441,PMC10260398,Genome-wide association meta-analysis of spontaneous coronary artery dissection identifies risk variants and genes related to artery integrity and tissue-mediated coagulation.,75,9.76,cc by
+Nature Genetics,2024,10.1038/s41588-024-01695-w,38622339,PMC11018527,The genome and population genomics of allopolyploid Coffea arabica reveal the diversification history of modern coffee cultivars.,66,9.65,cc by
+Nature Genetics,2026,10.1038/s41588-026-02577-z,42032297,PMC13175896,Telomere-to-telomere genome assemblies and population resequencing of diploid and allotetraploid peanut varieties.,0,9.5,cc by
+Nature Genetics,2024,10.1038/s41588-024-01744-4,38714866,PMC11176064,Genomic analyses reveal the stepwise domestication and genetic mechanism of curd biogenesis in cauliflower.,16,9.46,cc by
+Nature Genetics,2025,10.1038/s41588-025-02126-0,40140587,PMC11985347,The genome and GeneBank genomics of allotetraploid Nicotiana tabacum provide insights into genome evolution and complex trait regulation.,29,9.45,cc by-nc-nd
+Nature Genetics,2026,10.1038/s41588-025-02485-8,41634414,PMC12900644,"Genome-wide association study of major anxiety disorders in 122,341 European-ancestry cases identifies 58 loci and highlights GABAergic signaling.",36,8.64,cc by
+Nature Genetics,2026,10.1038/s41588-026-02641-8,42286142,PMC13364651,A k-mer-based genome-wide association study approach empowering gene mining in polyploids.,1,8.1,cc by-nc-nd
+Nature Genetics,2026,10.1038/s41588-026-02713-9,42736378,PMC13649558,APOE-stratified genome-wide association analyses provide insights into the genetic etiology of Alzheimers's disease.,4,7.9,cc by-nc-nd
+Nature Microbiology,2024,10.1038/s41564-023-01589-3,38326571,PMC10914620,Genome-wide association study identifies human genetic variants associated with fatal outcome from Lassa fever.,10,10.08,cc by
+Nature Microbiology,2025,10.1038/s41564-025-02171-9,41174225,PMC12669038,Genetic population structure of Haemophilus influenzae at local and global scales.,4,5.9,cc by
+Nature Microbiology,2025,10.1038/s41564-025-02119-z,40987851,PMC12488481,Genome-resolved metagenomics reveals microbiome diversity across 48 tick species.,13,5.79,cc by
+Nature Microbiology,2025,10.1038/s41564-025-02062-z,40707831,PMC12313526,Genome-resolved long-read sequencing expands known microbial diversity across terrestrial habitats.,41,5.75,cc by-nc-nd
+Nature Microbiology,2026,10.1038/s41564-026-02327-1,41975094,PMC13171616,Impact of intensive control on malaria population genomics under elimination settings in Southeast Asia.,0,5.5,cc by-nc-nd
+Nature Microbiology,2024,10.1038/s41564-023-01598-2,38321183,PMC10914622,COBRA improves the completeness and contiguity of viral genomes assembled from metagenomes.,42,5.27,cc by
+Nature Microbiology,2023,10.1038/s41564-023-01381-3,37188815,PMC10234815,Reconstruction of the personal information from human genome reads in gut metagenome sequencing data.,39,5.2,cc by
+Nature Microbiology,2024,10.1038/s41564-023-01547-z,38177305,PMC10769879,Recent gene selection and drug resistance underscore clinical adaptation across Candida species.,37,5.16,cc by
+Nature Microbiology,2023,10.1038/s41564-023-01377-z,37169919,PMC10322710,Chloroquine resistance evolution in Plasmodium falciparum is mediated by the putative amino acid transporter AAT1.,99,5.0,cc by
+Nature Microbiology,2023,10.1038/s41564-022-01295-6,36804636,PMC9981465,Genome-wide subcellular protein map for the flagellate parasite Trypanosoma brucei.,158,5.0,cc by
+Nature Microbiology,2025,10.1038/s41564-025-01973-1,40140705,PMC12055584,Seed-borne bacteria drive wheat rhizosphere microbiome assembly via niche partitioning and facilitation.,52,4.95,cc by
+Nature Microbiology,2023,10.1038/s41564-022-01275-w,36604510,PMC9816062,"Metavirome of 31 tick species provides a compendium of 1,801 RNA virus genomes.",90,4.92,cc by
+Nature Microbiology,2026,10.1038/s41564-026-02334-2,42014453,PMC13171431,Benchmarking of shotgun sequencing depth reveals the potential and limitations of shallow metagenomics and strain-level analysis.,12,4.73,cc by
+Nature Microbiology,2025,10.1038/s41564-025-02056-x,40670725,PMC12313528,Integrative genomic reconstruction reveals heterogeneity in carbohydrate utilization across human gut bifidobacteria.,36,4.64,cc by-nc-nd
+Nature Microbiology,2023,10.1038/s41564-023-01385-z,37231089,PMC10234813,Particular genomic and virulence traits associated with preterm infant-derived toxigenic Clostridium perfringens strains.,54,4.48,cc by
+Nature Microbiology,2024,10.1038/s41564-024-01751-5,38907008,PMC11306104,"A multi-kingdom collection of 33,804 reference genomes for the human vaginal microbiome.",52,4.45,cc by
+Nature Microbiology,2026,10.1038/s41564-026-02435-y,42595815,PMC13524828,Genomic catalogue of giant viruses reveals expanded diversity and functional potential.,2,4.45,cc by-nc-nd
+Nature Microbiology,2024,10.1038/s41564-023-01582-w,38316928,PMC10847045,Predictions of rhizosphere microbiome dynamics with a genome-informed and trait-based energy budget model.,35,4.11,cc by
+Nature Microbiology,2026,10.1038/s41564-025-02203-4,41461920,PMC12768965,Large-scale analysis of bacterial genomes reveals thousands of lytic phages.,16,3.96,cc by
+Nature Microbiology,2026,10.1038/s41564-026-02260-3,41775999,PMC12962971,Phenogenomics reveals the ecology and evolution of Trichoderma fungi for sustainable agriculture.,11,3.66,cc by
+Nature Plants,2023,10.1038/s41477-023-01526-6,37770615,PMC10581907,Population genomics identifies genetic signatures of carrot domestication and improvement and uncovers the origin of high-carotenoid orange carrots.,39,11.2,cc by
+Nature Plants,2025,10.1038/s41477-025-01942-w,40087544,PMC11928320,Hordeum I genome unlocks adaptive evolution and genetic potential for crop improvement.,17,7.01,cc by-nc-nd
+Nature Plants,2024,10.1038/s41477-024-01713-z,38816498,PMC11208153,Genome resources for three modern cotton lines guide future breeding efforts.,26,5.86,cc by
+Nature Plants,2023,10.1038/s41477-022-01333-5,36747050,PMC9946827,Newly identified sex chromosomes in the Sphagnum (peat moss) genome alter carbon sequestration and ecosystem dynamics.,80,5.82,cc by
+Nature Plants,2025,10.1038/s41477-025-01989-9,40263581,PMC12095077,Viral delivery of an RNA-guided genome editor for transgene-free germline editing in Arabidopsis.,64,5.13,cc by
+Nature Plants,2026,10.1038/s41477-025-02210-7,41634153,PMC12929062,Large-scale multi-omics unveils host-microbiome interactions driving root development and nitrogen acquisition.,18,5.06,cc by
+Nature Plants,2024,10.1038/s41477-024-01858-x,39587314,PMC11649558,ZW sex chromosome structure in Amborella trichopoda.,31,5.01,cc by-nc-nd
+Nature Plants,2023,10.1038/s41477-022-01338-0,36759580,PMC9946824,Leaf transformation for efficient random integration and targeted genome modification in maize and sorghum.,100,5.0,cc by
+Nature Plants,2024,10.1038/s41477-023-01608-5,38278954,PMC7615686,Seagrass genomes reveal ancient polyploidy and adaptations to the marine environment.,48,4.38,cc by
+Nature Plants,2023,10.1038/s41477-023-01538-2,37814021,PMC10654050,Targeted knockout of a conserved plant mitochondrial gene by genome editing.,31,4.01,cc by
+Nature Plants,2024,10.1038/s41477-024-01709-9,38802561,PMC11208156,Removal of the large inverted repeat from the plastid genome reveals gene dosage effects and leads to increased genome copy number.,31,4.01,cc by
+Nature Plants,2025,10.1038/s41477-025-01920-2,40087541,PMC11928318,Septoria tritici blotch resistance gene Stb15 encodes a lectin receptor-like kinase.,14,3.85,cc by
+Nature Plants,2026,10.1038/s41477-026-02237-4,41720886,PMC13013028,"High-efficiency, transgene-free plant genome editing by viral delivery of an engineered TnpB.",14,3.85,cc by
+Nature Plants,2025,10.1038/s41477-025-01966-2,40164786,PMC12015120,Rapid formation of stable autotetraploid rice from genome-doubled F1 hybrids of japonica-indica subspecies.,12,3.73,cc by-nc-nd
+Nature Plants,2026,10.1038/s41477-026-02361-1,42509257,PMC13481248,Chloroplast-encoded small subunit extensions reshape the Chlamydomonas chlororibosome.,3,2.7,cc by

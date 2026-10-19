@@ -1,0 +1,61 @@
+id: circos-landscape.warm-editorial
+archetype: circos-landscape
+label: Warm editorial
+status: draft
+preset: templates/presets/circos-landscape/warm-editorial.yaml
+template: templates/R/circos-landscape.R
+provenance:
+  support_n: 32
+  evidence:
+  - doi: 10.1038/s41467-026-68463-8
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 1
+    match_pos: 0
+    caption: Circos plot of genome assembly and annotation of FDDB.Switches between
+      light grey and dark grey on the chromosomes indicate gaps in the preliminary
+      as…
+  - doi: 10.1038/s41559-022-01980-z
+    journal: Nature Ecology & Evolution
+    year: 2023
+    figure: Extended Data Fig. 4
+    match_pos: 0
+    caption: Circos plot of protein-based homologous loci.a, P. pacificus vs. P. exspectatus.
+      b, P. pacificus vs. C. elegans. c, P. exspectatus vs. C. elegans. One…
+  - doi: 10.1038/s41467-023-37489-7
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 6
+    match_pos: 15
+    caption: GWAS in lablab.Circos plots showing the distribution of significant marker-trait
+      associations (MTA) identified in the lablab genome. Only significant …
+  - doi: 10.1038/s41588-025-02166-6
+    journal: Nature Genetics
+    year: 2025
+    figure: Fig. 4
+    match_pos: 37
+    caption: 'Genetic SVs of Malus pan-genome.a, A Circos plot of the ‘Fuji’ genome
+      with genomic features. From outer to inner tracks: (1–4) chromosomes, gene densi…'
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#8C2D04'
+  - '#CC4C02'
+  - '#E6550D'
+  - '#FD8D3C'
+  - '#FDD0A2'
+  grid: false
+  base_font_pt: 7
+  point_size: null
+  panels: single
+when_to_use: 植物/生态/进化题材，暖色系期刊封面风格
+avoid_when: 与红绿语义冲突的类别
+pitfalls:
+- 暖色在 CVD 模拟下与绿色接近
+submission_safe: false
+cvd:
+  dE: '18.5'
+  deutan: '13.4'
+  protan: '9.6'
+  checked: '2026-10-19'

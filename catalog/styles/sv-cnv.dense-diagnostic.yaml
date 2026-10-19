@@ -1,0 +1,63 @@
+id: sv-cnv.dense-diagnostic
+archetype: sv-cnv
+label: Dense diagnostic
+status: draft
+preset: templates/presets/sv-cnv/dense-diagnostic.yaml
+template: templates/R/sv-cnv.R
+provenance:
+  support_n: 95
+  evidence:
+  - doi: 10.1038/s41586-025-09065-0
+    journal: Nature
+    year: 2025
+    figure: Fig. 3
+    match_pos: 0
+    caption: Structural variants occur at different frequencies in populations and
+      are non-randomly distributed across the genome.a, Frequencies of inversions
+      (inv…
+  - doi: 10.1038/s41586-023-06173-7
+    journal: Nature
+    year: 2023
+    figure: Extended Data Fig. 5
+    match_pos: 0
+    caption: CNV genes with higher frequency in CPC than that in two HPRC subsets.CNV
+      genes observed in both CPC (frequency ≥5%) and HPRC are compared across the
+      t…
+  - doi: 10.1038/s41586-023-06842-7
+    journal: Nature
+    year: 2023
+    figure: Extended Data Fig. 2
+    match_pos: 0
+    caption: Structural variation detection performance and genomic alignments for
+      HG002 samples.(a) Line plots show precision and recall of SV calls detected
+      with…
+  - doi: 10.1038/s41467-023-40407-6
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 3
+    match_pos: 0
+    caption: Copy number variation in chromosome three across eight glyphosate-resistant
+      and eight glyphosate-susceptible Eleusine indica individuals.The ideogram …
+  derivation: caption evidence (keyword position ranked) + prototype parameters; pixel
+    check pending
+visual_grammar:
+  palette:
+  - '#2F4B7C'
+  - '#A05195'
+  - '#2F7D5C'
+  - '#8C6D31'
+  grid: true
+  base_font_pt: 6.5
+  point_size: null
+  panels: multi
+when_to_use: 补充图/Extended Data，全基因组扫描，信息密度优先
+avoid_when: 主图、幻灯片、需要强调单一结论时
+pitfalls:
+- 6 pt 以下字号印刷前必须复核
+- 灰底网格不要压过数据
+submission_safe: true
+cvd:
+  dE: '35.6'
+  deutan: '14.2'
+  protan: '13.1'
+  checked: '2026-10-19'

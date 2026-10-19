@@ -1,0 +1,26 @@
+id: presence-absence
+label: 泛基因组存在缺失热图
+status: prototype
+implementation: ComplexHeatmap
+structures: [heatmap+annotations, heatmap+tree]
+
+why: >
+  泛基因组论文的主图：行是基因家族，列是基因组，色块是存在/缺失。
+  靠列分组和行聚类把「核心—附属」结构和群体分层一眼分开。
+
+inputs:
+  pav: {file: pav.tsv, format: wide matrix, first_col: gene, values: 0/1}
+  samples: {file: samples.tsv, columns: {sample: chr, group: chr}}
+  genes: {file: genes.tsv, columns: {gene: chr, category: chr}}
+
+presets: [minimal-editorial, dense-diagnostic, high-contrast]
+
+rules:
+  - 列数 > 300 时关闭列名、开 raster，否则 PDF 巨大
+  - 行顺序按 category（core→softcore→shell→cloud→singleton），不要纯聚类
+  - 0/1 用两色 + 中间色，别用彩虹
+  - 图例合并（merge_legend），避免右侧三列图例
+
+fixtures: fixtures/presence-absence/
+template: templates/R/presence-absence.R
+tests: pending

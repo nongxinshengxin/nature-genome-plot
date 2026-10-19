@@ -1,0 +1,43 @@
+label: Soft pastel
+bg: white
+sector_fill:
+- '#FAFAFA'
+sector_border: '#DCDCDC'
+chrom_cols:
+- '#9DC3E6'
+- '#F4B183'
+- '#A9D18E'
+- '#C9A7D6'
+- '#F7C6C7'
+tracks:
+- key: gene
+  color: '#7FA8C9'
+  type: h
+- key: te
+  color: '#E0A080'
+  type: h
+- key: gc
+  color: '#8CBF9E'
+  type: l
+track_heights:
+- 0.065
+- 0.09
+- 0.09
+- 0.09
+gaps:
+- 3
+- 3
+- 3
+- 3
+- 8
+link_color_by: source
+link_color: '#A8C4DD'
+link_alpha: 0.35
+link_lwd: 0.7
+label_cex: 0.85
+label_font: 1
+label_offset: 1.65
+axis_cex: 0.5
+axis_col: '#777777'
+grid: false
+border_lwd: 0.45

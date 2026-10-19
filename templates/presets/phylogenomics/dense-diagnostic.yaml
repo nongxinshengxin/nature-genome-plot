@@ -1,0 +1,14 @@
+label: Dense diagnostic
+layout: rectangular
+tree_color: '#333333'
+branch_lw: 0.3
+tip_size: 4.0
+heat_scale:
+- '#FFFFFF'
+- '#2F4B7C'
+heat_border: white
+heat_lw: 0.15
+show_support: true
+base_size: 6.5
+grid: false
+offset: 0.01

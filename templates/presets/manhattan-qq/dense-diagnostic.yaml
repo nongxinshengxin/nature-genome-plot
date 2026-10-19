@@ -1,0 +1,16 @@
+label: Dense diagnostic
+palette:
+- '#1F3B73'
+- '#B34700'
+point_size: 0.35
+point_alpha: 0.9
+threshold: 5.0e-08
+threshold_color: '#D55E00'
+grid: true
+top_labels: 8
+qq_point_size: 0.5
+base_size: 6.5
+axis_text: 5.5
+lead_color: '#D55E00'
+chrom_gap: 0.008
+p_floor: 1.0e-50

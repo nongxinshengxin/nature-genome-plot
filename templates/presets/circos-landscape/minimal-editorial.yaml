@@ -1,0 +1,43 @@
+label: Minimal editorial
+bg: white
+sector_fill:
+- '#F4F4F4'
+sector_border: '#C9C9C9'
+chrom_cols:
+- '#0072B2'
+- '#D55E00'
+- '#009E73'
+- '#CC79A7'
+- '#E69F00'
+tracks:
+- key: gene
+  color: '#0072B2'
+  type: h
+- key: te
+  color: '#D55E00'
+  type: h
+- key: gc
+  color: '#009E73'
+  type: l
+track_heights:
+- 0.06
+- 0.08
+- 0.08
+- 0.08
+gaps:
+- 2
+- 2
+- 2
+- 2
+- 7
+link_color_by: source
+link_color: '#5B6673'
+link_alpha: 0.22
+link_lwd: 0.5
+label_cex: 0.72
+label_font: 1
+label_offset: 1.6
+axis_cex: 0.5
+axis_col: '#666666'
+grid: false
+border_lwd: 0.4
