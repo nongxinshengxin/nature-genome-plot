@@ -119,8 +119,8 @@ circos 另有 3 种：`soft-pastel`、`mono-blue`、`warm-editorial`。
 ### 装到 agent 里
 
 ```bash
-git clone <this-repo> ~/Documents/plugin_tools/nature-genome-plot
-cd ~/Documents/plugin_tools/nature-genome-plot
+git clone https://github.com/nongxinshengxin/nature-genome-plot.git
+cd nature-genome-plot
 
 ./install.sh            # DSH + Claude Code + Codex，用户级
 ./install.sh claude     # 只装一个：dsh | claude | codex
