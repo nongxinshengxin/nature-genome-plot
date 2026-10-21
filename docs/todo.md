@@ -5,7 +5,7 @@
 - selection-scan：fixture 的候选区坐标与注入峰不一致，演示时像错位
 - circos：底部染色体标签可能倒置，需按角度翻转
 - linear-tracks：基因标签与基因箭头/坐标轴贴得太近
-- PDF 走 `pdf()`，字体为 Type1 Helvetica（未嵌入）；严格投稿前需 embedFonts 或改用 SVG
+- 默认 Arial；PDF 设备不支持 Arial，回落 Type1 Helvetica（未嵌入），需要 Arial 请导 SVG
 
 ## 数据坑
 - Manhattan：`p=0` 或过小值按下限丢弃（默认 1e-50），不要钳到下限

@@ -33,6 +33,13 @@ preset_path <- if (nzchar(preset_arg)) preset_arg else
 if (!file.exists(preset_path)) stop("preset not found: ", preset_path)
 st <- read_yaml(preset_path)
 
+FONT <- if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) "Helvetica" else
+  if (!is.null(st$font)) st$font else "Arial"
+if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
+  message("PDF device cannot embed Arial here; falling back to Helvetica. Export SVG for Arial.")
+}
+
+
 tree <- read.tree(file.path(data_dir, "tree.nwk"))
 mat_dt <- fread(file.path(data_dir, "matrix.tsv"))
 mat <- as.data.frame(mat_dt)
@@ -56,7 +63,8 @@ p <- gheatmap(p, mat, offset = st$offset * 4, width = 0.55,
               font.size = st$tip_size / .pt,
               color = st$heat_border) +
   scale_fill_gradientn(colours = unlist(st$heat_scale), name = NULL) +
-  theme(legend.position = "right",
+  theme(text = element_text(family = FONT),
+        legend.position = "right",
         legend.key.size = unit(3, "mm"),
         legend.text = element_text(size = st$tip_size),
         plot.margin = margin(2, 2, 9, 2))

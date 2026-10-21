@@ -30,6 +30,13 @@ preset_path <- if (nzchar(preset_arg)) preset_arg else
 if (!file.exists(preset_path)) stop("preset not found: ", preset_path)
 st <- read_yaml(preset_path)
 
+FONT <- if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) "Helvetica" else
+  if (!is.null(st$font)) st$font else "Arial"
+if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
+  message("PDF device cannot embed Arial here; falling back to Helvetica. Export SVG for Arial.")
+}
+
+
 dt <- fread(file.path(data_dir, "windows.tsv"))
 xvar <- st$xvar
 if (!xvar %in% names(dt)) stop("x column not found: ", xvar)
@@ -41,7 +48,7 @@ dt[, bin := as.numeric(bin)]
 
 pal <- unlist(st$gradient)
 
-theme_panel <- theme_classic(base_size = st$base_size, base_family = "Helvetica") +
+theme_panel <- theme_classic(base_size = st$base_size, base_family = FONT) +
   theme(
     axis.text.x = element_text(size = st$axis_text, colour = "black"),
     axis.text.y = element_text(size = st$axis_text, colour = "black"),
@@ -112,7 +119,7 @@ leg <- ggplot(leg_dt, aes(x = x, y = 1, fill = x)) +
                      position = "top") +
   scale_y_continuous(expand = c(0, 0)) +
   labs(title = st$legend_title) +
-  theme_void(base_size = st$base_size, base_family = "Helvetica") +
+  theme_void(base_size = st$base_size, base_family = FONT) +
   theme(
     plot.title = element_text(size = st$base_size, hjust = 0, margin = margin(b = 1)),
     axis.text.x = element_text(size = st$axis_text, vjust = 1),

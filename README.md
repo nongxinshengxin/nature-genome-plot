@@ -117,7 +117,7 @@ circos 另有 3 种：`soft-pastel`、`mono-blue`、`warm-editorial`。
 
 - **R ≥ 4.4**：ggplot2、data.table、patchwork、yaml、circlize、ComplexHeatmap、ggtree、treeio、ggrepel、scales、ragg、svglite、colorspace
 - **Python ≥ 3.9**：pandas、PyYAML、Pillow（只用于校验与目录脚本）
-- 字体：Helvetica / Arial
+- 字体：默认 **Arial**；PDF 设备不支持 Arial 时回落 Helvetica，需要 Arial 的 PDF 请导出 SVG
 
 ### 装到 agent 里
 
@@ -279,7 +279,7 @@ drop_na: [P]
 ## 已知限制
 
 - 风格卡是 `draft`：证据到「DOI + 图号 + 图注」级别，未逐张对原图做像素级核验
-- PDF 用 Type1 Helvetica，字体未嵌入；严格投稿请交 SVG 或自行 `embedFonts`
+- PDF 设备不支持 Arial，导出 PDF 会回落 Type1 Helvetica 且字体未嵌入；需要 Arial 或可嵌入字体时请导出 SVG
 - 除 1 份脏 GWAS 外，其他图型还没在真实数据上跑过
 - 语料 200 篇中 Nature Communications 占 90，风格归纳偏这个刊
 

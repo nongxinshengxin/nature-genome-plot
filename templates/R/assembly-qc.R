@@ -32,6 +32,13 @@ preset_path <- if (nzchar(preset_arg)) preset_arg else
 if (!file.exists(preset_path)) stop("preset not found: ", preset_path)
 st <- read_yaml(preset_path)
 
+FONT <- if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) "Helvetica" else
+  if (!is.null(st$font)) st$font else "Arial"
+if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
+  message("PDF device cannot embed Arial here; falling back to Helvetica. Export SVG for Arial.")
+}
+
+
 busco <- fread(file.path(data_dir, "busco.tsv"))
 ngx <- fread(file.path(data_dir, "ngx.tsv"))
 
@@ -43,7 +50,7 @@ ngx[, assembly := factor(assembly, levels = levels(busco$assembly))]
 pal <- unlist(st$palette)
 lab_pal <- unlist(st$lab_palette)
 
-base_theme <- theme_classic(base_size = st$base_size, base_family = "Helvetica") +
+base_theme <- theme_classic(base_size = st$base_size, base_family = FONT) +
   theme(
     axis.text = element_text(size = st$axis_text, colour = "#333333"),
     axis.title = element_text(size = st$base_size),

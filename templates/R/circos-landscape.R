@@ -39,6 +39,13 @@ if (!file.exists(preset_path)) {
 }
 st <- read_yaml(preset_path)
 
+FONT <- if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) "Helvetica" else
+  if (!is.null(st$font)) st$font else "Arial"
+if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
+  message("PDF device cannot embed Arial here; falling back to Helvetica. Export SVG for Arial.")
+}
+
+
 chrom  <- fread(file.path(data_dir, "chrom.tsv"))
 tracks <- fread(file.path(data_dir, "tracks.tsv"))
 links  <- fread(file.path(data_dir, "links.tsv"))
@@ -55,7 +62,7 @@ links[, `:=`(chrom1 = factor(chrom1, levels = lev),
              chrom2 = factor(chrom2, levels = lev))]
 
 draw <- function() {
-  par(mar = c(0.5, 0.5, 0.5, 0.5), bg = st$bg, family = "Helvetica")
+  par(mar = c(0.5, 0.5, 0.5, 0.5), bg = st$bg, family = FONT)
   circos.clear()
   circos.par(
     start.degree = 90,
@@ -132,7 +139,7 @@ draw <- function() {
 }
 
 if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
-  pdf(out_file, width = width_mm / 25.4, height = height_mm / 25.4, family = "Helvetica")
+  pdf(out_file, width = width_mm / 25.4, height = height_mm / 25.4, family = FONT)
 } else {
   ragg::agg_png(out_file, width = width_mm, height = height_mm, units = "mm", res = dpi)
 }
