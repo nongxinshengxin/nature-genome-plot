@@ -38,3 +38,6 @@
 "synteny","minimal-editorial",2,114.6,108.3,91.9,7,"ok"
 "synteny","dense-diagnostic",2,97.3,94.8,80.6,6.5,"ok"
 "synteny","high-contrast",2,97.3,94.8,80.6,8,"font>7pt"
+"binned-correlation","nature-decile",0,NA,NA,NA,7,"single/continuous palette"
+"binned-correlation","minimal-editorial",0,NA,NA,NA,7,"single/continuous palette"
+"binned-correlation","high-contrast",0,NA,NA,NA,8,"single/continuous palette"

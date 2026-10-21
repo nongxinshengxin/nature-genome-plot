@@ -3,12 +3,12 @@
 **把基因组、泛基因组、群体基因组的结果，变成能投 Nature 系的图。**
 
 ![R](https://img.shields.io/badge/R-4.5-276DC3?logo=r&logoColor=white)
-![templates](https://img.shields.io/badge/archetypes-12-2ea44f)
-![presets](https://img.shields.io/badge/style%20presets-39-1f6feb)
-![smoke](https://img.shields.io/badge/smoke%20tests-39%2F39-brightgreen)
+![templates](https://img.shields.io/badge/archetypes-13-2ea44f)
+![presets](https://img.shields.io/badge/style%20presets-42-1f6feb)
+![smoke](https://img.shields.io/badge/smoke%20tests-42%2F42-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 
-12 个图型模板、39 个风格预设、39 张带文献出处的风格卡，模板全部是可运行的 R 代码。
+13 个图型模板、42 个风格预设、42 张带文献出处的风格卡，模板全部是可运行的 R 代码。
 数据规整时直接出图；不规整时，先理顺格式。
 
 > **30 秒版**：把数据丢过来 → 判图型 → 诊断列名/缺失/命名 → 映射成契约表 → 渲染两种风格 → 按 12 项投稿标准检查。
@@ -70,7 +70,7 @@ Nature Microbiology、Nature Communications** 的 200 篇开放获取论文（16
 
 ---
 
-## 12 个模板
+## 13 个模板
 
 | # | 图型 | 回答什么问题 | 需要什么数据 | 风格 |
 |---|---|---|---|---|
@@ -86,10 +86,11 @@ Nature Microbiology、Nature Communications** 的 200 篇开放获取论文（16
 | 10 | `selection-scan` | Fst 峰 / π 谷在哪 | 窗口统计 | 3 |
 | 11 | `demography` | 群体大小怎么变、重组多快 | SFS / PSMC / LD 衰减 | 3 |
 | 12 | `phylogenomics` | 拓扑结构 + 性状怎么分布 | Newick 树 + 矩阵 | 3 |
+| 13 | `binned-correlation` | 多样性沿分位与 TE/基因密度、甲基化怎么变 | 窗口表（diversity + 数值列） | 3 |
 
 每个图型的输入契约、结构变体、硬规则在 `catalog/archetypes/<id>.yaml`。
 
-## 39 种风格
+## 42 种风格
 
 三个风格族，跨图型保持视觉一致：
 
@@ -100,6 +101,8 @@ Nature Microbiology、Nature Communications** 的 200 篇开放获取论文（16
 | `high-contrast` | 加粗、7–8 pt、强对比 | 汇报、预印本、投影 |
 
 circos 另有 3 种：`soft-pastel`、`mono-blue`、`warm-editorial`。
+`binned-correlation` 的 `nature-decile` 按一篇 Nature Communications 的 Fig. 2b–g 复刻：
+十分位箱线 + 黄→橙→紫→蓝渐变 + rho/P 标注，适合多样性与 TE/基因密度、甲基化的相关。
 
 ![circos styles](docs/images/circos-styles.png)
 
@@ -161,7 +164,7 @@ R 依赖分两类：
 
 ```bash
 python3 scripts/validate/catalog_check.py     # 结构完整性
-python3 scripts/validate/smoke.py             # 39 个渲染组合
+python3 scripts/validate/smoke.py             # 42 个渲染组合
 Rscript scripts/validate/style_audit.R        # 色盲审计
 ```
 
@@ -243,18 +246,18 @@ drop_na: [P]
 ├── SKILL.md                  # 路由：意图 → 工作流 → 按需加载
 ├── manifest.yaml             # 加载轴
 ├── catalog/
-│   ├── index.yaml            # 12 行摘要
+│   ├── index.yaml            # 13 行摘要
 │   ├── archetypes/           # 输入契约、规则
 │   └── styles/               # 39 张风格卡（证据 + CVD + 适用场景）
 ├── templates/
-│   ├── R/                    # 12 个 CLI 模板
-│   └── presets/              # 39 个 YAML
+│   ├── R/                    # 13 个 CLI 模板
+│   └── presets/              # 42 个 YAML
 ├── adapters/                 # 5 个格式转换
 ├── scripts/
 │   ├── profile/              # 判型、诊断、映射
 │   ├── harvest/              # 文献语料构建
 │   └── validate/             # 冒烟、catalog、CVD
-├── fixtures/                 # 12 套合成数据
+├── fixtures/                 # 13 套合成数据
 ├── references/               # 期刊规格、选型规则、工作流
 ├── examples/                 # 端到端案例
 └── docs/                     # 验收、审计、已知问题
@@ -266,7 +269,7 @@ drop_na: [P]
 
 | 检查 | 结果 |
 |---|---|
-| 渲染矩阵 | 39/39 通过 |
+| 渲染矩阵 | 42/42 通过 |
 | catalog 结构 | 12 图型 / 39 卡，0 错误 |
 | 色盲审计 | 25 通过，9 个幻灯片专用，2 个装饰风格标注 |
 | 适配器 | 5/5 通过 |

@@ -1,6 +1,6 @@
 # 风格审计
 
-- 组合：39；标记问题：14
+- 组合：42；标记问题：17
 
 | archetype | preset | 色数 | ΔE | deutan | protan | 字号 | 标记 |
 |---|---|---|---|---|---|---|---|
@@ -43,3 +43,6 @@
 | synteny | minimal-editorial | 2 | 114.6 | 108.3 | 91.9 | 7.0 | ok |
 | synteny | dense-diagnostic | 2 | 97.3 | 94.8 | 80.6 | 6.5 | ok |
 | synteny | high-contrast | 2 | 97.3 | 94.8 | 80.6 | 8.0 | font>7pt |
+| binned-correlation | nature-decile | 0 | NA | NA | NA | 7.0 | single/continuous palette |
+| binned-correlation | minimal-editorial | 0 | NA | NA | NA | 7.0 | single/continuous palette |
+| binned-correlation | high-contrast | 0 | NA | NA | NA | 8.0 | single/continuous palette |

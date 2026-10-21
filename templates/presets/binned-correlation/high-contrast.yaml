@@ -1,0 +1,43 @@
+xvar: diversity
+bins: 10
+features:
+- key: inter_synteny
+  label: 'Inter-species
+
+    syntenic diversity'
+- key: gene_cov
+  label: 'Gene
+
+    coverage'
+- key: te_cov
+  label: 'TE
+
+    coverage'
+- key: mCG
+  label: mCG
+- key: mCHG
+  label: mCHG
+- key: mCHH
+  label: mCHH
+gradient:
+- '#F5B301'
+- '#E8792B'
+- '#D64550'
+- '#B03A8C'
+- '#7A4FA8'
+- '#1170B0'
+outline: '#1A1A1A'
+box_lw: 0.6
+box_width: 0.68
+base_size: 8
+axis_text: 6.6
+rho_size: 7
+letter_size: 13
+letter_face: bold
+panel_border: true
+border_lw: 0.9
+legend_title: Intra-species synteny diversity
+x_label: Percentile of intra-species synteny diversity
+legend_h: 0.3
+tick_lw: 0.4
+label: High contrast

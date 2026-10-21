@@ -16,7 +16,7 @@ description: >-
 
 # nature-genome-plot — Router
 
-12 个图型、39 个预设，全部可运行。**绘图脚本只出 R 或 Python，默认 R。**
+13 个图型、42 个预设，全部可运行。**绘图脚本只出 R 或 Python，默认 R。**
 
 ## 1. 判定工作流
 
@@ -30,7 +30,7 @@ description: >-
 
 ## 2. 加载顺序（渐进披露）
 
-1. 读 `catalog/index.yaml`（12 行摘要），按意图 + 数据签名匹配 `id`。
+1. 读 `catalog/index.yaml`（13 行摘要），按意图 + 数据签名匹配 `id`。
 2. 匹配不到：读 `references/core/decision-rules.md` 取最近邻，并**告诉用户这是最近邻**。
 3. 读 `catalog/archetypes/<id>.yaml`：输入契约、结构、规则。
 4. 读 1–3 张 `catalog/styles/<id>.<preset>.yaml`：看证据与适用场景。
@@ -76,10 +76,11 @@ Rscript templates/R/<id>.R --data <dir> --style <preset> \
 - 尺寸默认：单栏 89 mm、双栏 183 mm、主图高 ≤170 mm
 - 每轮说明「改了什么、为什么」
 
-## 6. 12 个图型
+## 6. 13 个图型
 
 circos/弦图（6 风格）、线性轨道、共线性、组装质控、泛基因组构成、存在缺失、
-SV/CNV、群体结构、Manhattan/QQ、选择清除、群体历史、系统发育。
+SV/CNV、群体结构、Manhattan/QQ、选择清除、群体历史、系统发育、
+分位箱线相关（`binned-correlation`，多样性 × TE/基因密度）。
 
 风格族：`minimal-editorial`（主图）、`dense-diagnostic`（补充图）、`high-contrast`（汇报）；
 circos 另有 `soft-pastel`、`mono-blue`、`warm-editorial`。

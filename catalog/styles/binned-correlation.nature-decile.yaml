@@ -1,0 +1,55 @@
+id: binned-correlation.nature-decile
+archetype: binned-correlation
+label: Nature decile boxplot
+status: draft
+preset: templates/presets/binned-correlation/nature-decile.yaml
+template: templates/R/binned-correlation.R
+provenance:
+  support_n: 1
+  evidence:
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2b
+    caption: Inter-species syntenic diversity vs ten percentile bins of intra-species
+      synteny diversity; rho = 0.4164, P < 2.2×10⁻²²
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2c
+    caption: Gene coverage shows a negative relationship (rho = −0.4808)
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2d
+    caption: TE coverage shows a positive relationship (rho = 0.5436)
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2e
+    caption: mCG increases with diversity (rho = 0.4605)
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2f
+    caption: mCHG increases with diversity (rho = 0.5258)
+  - doi: 10.1038/s41467-026-77788-3
+    journal: Nature Communications
+    year: 2026
+    figure: Fig. 2g
+    caption: mCHH increases with diversity (rho = 0.4242)
+  derivation: style parameters read from Fig. 2b–g of the supplied PDF; palette sampled
+    from the published boxes
+visual_grammar:
+  panels: 1 × n stacked, shared x
+  fill: sequential gradient by diversity decile (yellow→orange→rose→purple→blue)
+  box: black outline, median line, whiskers to 1.5×IQR, outliers hidden
+  annotation: rho and P at top-left of each panel
+  legend: horizontal colour bar above the stack, 0.0–1.0
+when_to_use: 窗口级连续相关：diversity × TE/基因覆盖度、甲基化、重组率；需要展示分布而不只是均值
+avoid_when: 窗口数 <200（分位不稳）；需要控制协变量时（应上偏相关或混合模型）
+pitfalls:
+- 分位标签只在最底面板
+- P 极小值写 <2.2×10⁻¹⁶
+- 箱线图不表达样本量
+submission_safe: true

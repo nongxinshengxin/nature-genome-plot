@@ -155,3 +155,15 @@ archetypes:
   fixture: fixtures/synteny/
   template: templates/R/synteny.R
   summary: 两个组装之间的同源关系一眼可见：对角线是共线，断点是重排，反斜线是倒位。
+- id: binned-correlation
+  label: 分位箱线相关图（多样性 × TE/基因密度）
+  implementation: ggplot2 + patchwork
+  structures:
+  - stacked_panels
+  presets:
+  - nature-decile
+  - minimal-editorial
+  - high-contrast
+  fixture: fixtures/binned-correlation/
+  template: templates/R/binned-correlation.R
+  summary: 十分位箱线图：连续相关关系随分位的变化方向，带 rho/P 标注

@@ -1,7 +1,7 @@
 # 冒烟测试报告
 
-- 组合数：39；通过：39；失败：0
-- 用时：31s
+- 组合数：42；通过：42；失败：0
+- 用时：35s
 
 | archetype | preset | 状态 | 字节 | 尺寸 | 错误 |
 |---|---|---|---|---|---|
@@ -20,9 +20,9 @@
 | linear-tracks | minimal-editorial | ok | 237718 | 2161x944 |  |
 | linear-tracks | dense-diagnostic | ok | 254977 | 2161x944 |  |
 | linear-tracks | high-contrast | ok | 236280 | 2161x944 |  |
-| manhattan-qq | minimal-editorial | ok | 356310 | 2161x826 |  |
-| manhattan-qq | dense-diagnostic | ok | 329499 | 2161x826 |  |
-| manhattan-qq | high-contrast | ok | 307435 | 2161x826 |  |
+| manhattan-qq | minimal-editorial | ok | 356311 | 2161x826 |  |
+| manhattan-qq | dense-diagnostic | ok | 328610 | 2161x826 |  |
+| manhattan-qq | high-contrast | ok | 307479 | 2161x826 |  |
 | pangenome-composition | minimal-editorial | ok | 82704 | 2161x826 |  |
 | pangenome-composition | dense-diagnostic | ok | 83260 | 2161x826 |  |
 | pangenome-composition | high-contrast | ok | 86007 | 2161x826 |  |
@@ -44,3 +44,6 @@
 | synteny | minimal-editorial | ok | 54527 | 1417x1417 |  |
 | synteny | dense-diagnostic | ok | 45523 | 1417x1417 |  |
 | synteny | high-contrast | ok | 64028 | 1417x1417 |  |
+| binned-correlation | nature-decile | ok | 126439 | 885x1771 |  |
+| binned-correlation | minimal-editorial | ok | 126420 | 885x1771 |  |
+| binned-correlation | high-contrast | ok | 143049 | 885x1771 |  |

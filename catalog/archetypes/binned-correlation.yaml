@@ -1,0 +1,24 @@
+id: binned-correlation
+label: 分位箱线相关图（多样性 × TE/基因密度）
+status: prototype
+implementation: ggplot2 + patchwork
+structures: [stacked_panels]
+why: >
+  把连续的相关关系切成十分位，用箱线图展示分布随分位的变化方向。
+  适合窗口级数据：synteny diversity、π、Fst 与 TE/基因覆盖度、甲基化水平的关联。
+inputs:
+  windows:
+    file: windows.tsv
+    columns:
+      window: chr (optional)
+      diversity: num
+      features: 1..n numeric columns (inter_synteny, gene_cov, te_cov, mCG, mCHG, mCHH ...)
+presets: [nature-decile, minimal-editorial, high-contrast]
+rules:
+  - 窗口数 < 200 时分位不稳，改用散点 + loess
+  - 分位箱线只表达方向和强弱，不替代偏相关/混合模型
+  - x 轴分位标签只在最底部面板出现，避免重复
+  - rho 与 P 用 Spearman，P 用科学计数法，极小值写 < 2.2×10⁻¹⁶
+fixtures: fixtures/binned-correlation/
+template: templates/R/binned-correlation.R
+tests: pending

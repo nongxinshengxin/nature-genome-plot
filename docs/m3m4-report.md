@@ -1,4 +1,4 @@
-# M3/M4 进度：12 个图型模板（2026-10-19）
+# M3/M4 进度：13 个图型模板（2026-10-21）
 
 | # | archetype | 实现 | 预设 | 结构变体 |
 |---|---|---|---|---|
@@ -14,8 +14,9 @@
 | 10 | `selection-scan` | 选择清除（Fst / π 轨道） | ggplot2 (facet) | 3 | two_tracks, composite |
 | 11 | `sv-cnv` | 结构变异全景（密度 + 长度谱 + 频率） | ggplot2 + patchwork | 3 | genome-wide, locus |
 | 12 | `synteny` | 共线性（dotplot / ribbon） | ggplot2 | 3 | dotplot |
+| 13 | `binned-correlation` | 分位箱线相关图（多样性 × TE/基因密度） | ggplot2 + patchwork | 3 | stacked_panels |
 
-- 预设总数：39 个 YAML（12 类 × 3，circos 6）
-- 冒烟测试：12/12 通过（默认 fixture + minimal-editorial）
+- 预设总数：42 个 YAML（12 类 × 3，circos 6，binned-correlation 3）
+- 冒烟测试：42/42 通过（2026-10-21）
 - 数据契约：`catalog/archetypes/*.yaml`
 - 已知问题见 `docs/todo.md`
