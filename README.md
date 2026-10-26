@@ -102,7 +102,6 @@
 
 定制风格包括：
 - Circos 专用：`soft-pastel`（柔和马卡龙）、`mono-blue`（单色调蓝）、`warm-editorial`（暖色编辑风）。
-- GO 富集：`go-enrichment` 的 `nature-dotplot`，按 BP/CC/MF 分面，x 为 gene ratio，点大小为基因数，颜色为校正后显著性。
 
 ![GO enrichment](docs/images/go-enrichment.png)
 
