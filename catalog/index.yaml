@@ -167,3 +167,15 @@ archetypes:
   fixture: fixtures/binned-correlation/
   template: templates/R/binned-correlation.R
   summary: 十分位箱线图：连续相关关系随分位的变化方向，带 rho/P 标注
+- id: region-architecture
+  label: 基因组区段图谱（基因 + 重复序列 + 轨道）
+  implementation: ggplot2 + patchwork
+  structures:
+  - single_segment
+  presets:
+  - nature-region
+  - minimal-editorial
+  - high-contrast
+  fixture: fixtures/region-architecture/
+  template: templates/R/region-architecture.R
+  summary: 单区段线性图：基因箭头 + TE 色块 + 可选轨道

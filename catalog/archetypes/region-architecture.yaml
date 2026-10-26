@@ -1,0 +1,32 @@
+id: region-architecture
+label: 基因组区段图谱（基因 + 重复序列 + 轨道）
+status: prototype
+implementation: ggplot2 + patchwork
+structures: [single_segment]
+why: >
+  只看一个区段：基因按方向和家族画成箭头，TE 按类别铺成色块，
+  下面接 GC/甲基化等轨道。回答「这段序列里有什么、怎么排布」。
+inputs:
+  genes:
+    file: genes.tsv
+    columns: {chrom: chr, start: int, end: int, strand: "+/-", family: chr, name: chr}
+  repeats:
+    file: repeats.tsv
+    columns: {chrom: chr, start: int, end: int, class: chr}
+  tracks:
+    file: tracks.tsv
+    optional: true
+    columns: {chrom: chr, start: int, end: int, track: chr, value: num}
+  region:
+    file: region.tsv
+    columns: {chrom: chr, start: int, end: int}
+presets: [nature-region, minimal-editorial, high-contrast]
+rules:
+  - 区段建议 20 kb–2 Mb；再大基因箭头会碎，改用线性轨道或 circos
+  - 基因标签用 check_overlap 抽稀，不要全标
+  - TE 按 class 分泳道，不同 class 不叠在同一行
+  - 比例尺按区段自动取整（默认区段长度的 1/10）
+  - 轨道面板与主图共享 x 轴，只保留最底部坐标轴
+fixtures: fixtures/region-architecture/
+template: templates/R/region-architecture.R
+tests: pending

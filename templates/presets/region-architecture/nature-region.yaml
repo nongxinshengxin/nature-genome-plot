@@ -1,0 +1,32 @@
+gene_colors:
+  NBS-LRR: '#0072B2'
+  RLK: '#D55E00'
+  MYB: '#009E73'
+  WRKY: '#CC79A7'
+  P450: '#E69F00'
+  NAC: '#56B4E9'
+  ERF: '#7F7F7F'
+  bHLH: '#8C564B'
+te_colors:
+  LTR/Gypsy: '#8C6D31'
+  LTR/Copia: '#C49A6C'
+  DNA/hAT: '#6B8E23'
+  LINE: '#B0B0B0'
+arrow_size: 0.05
+gene_lw: 3.0
+label_n: 10
+label_size: 5.5
+gene_plus_y: 1.05
+gene_minus_y: 0.78
+te_y0: 0.12
+te_lane_h: 0.13
+base_size: 7
+axis_text: 6
+panel_border: false
+scalebar_kb: auto
+track_colors:
+  GC: '#4C78A8'
+  mCG: '#D55E00'
+tick_kb: 100
+legend: bottom
+label: Nature region

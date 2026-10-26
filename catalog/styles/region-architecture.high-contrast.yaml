@@ -1,0 +1,41 @@
+id: region-architecture.high-contrast
+archetype: region-architecture
+label: High contrast
+status: draft
+preset: templates/presets/region-architecture/high-contrast.yaml
+template: templates/R/region-architecture.R
+provenance:
+  support_n: 3
+  evidence:
+  - doi: 10.1038/s41586-025-09140-6
+    journal: Nature
+    year: 2025
+    figure: Fig. 3
+    caption: MHC locus organization into class I/II/III regions with the genes contained
+      therein
+  - doi: 10.1038/s41586-024-08187-1
+    journal: Nature
+    year: 2024
+    figure: Extended Data Fig. 9
+    caption: 'Haplotype structure of the amy1_1 locus: gene order along the segment
+      across assemblies'
+  - doi: 10.1038/s41586-026-10229-9
+    journal: Nature
+    year: 2026
+    figure: Fig. 3
+    caption: Haplotype structure at the sh1 domestication locus, compared as linear
+      segment maps
+  derivation: gene-arrow grammar from Nature locus figures; repeat lane follows TE-density
+    conventions from pangenome papers
+visual_grammar:
+  panels: one gene/repeat panel + optional track panels
+  gene: filled arrow, colour = family, lane by strand
+  repeat: coloured block, lane by class
+  scale: auto scale bar, Mb axis
+when_to_use: 单区段结构解析、候选基因簇、TE 插入位点、甲基化/覆盖度随位置变化
+avoid_when: 区段 >2 Mb 或需要全基因组视角（改用 linear-tracks / circos）
+pitfalls:
+- 基因太短时箭头退化成点
+- 标签必须抽稀
+- TE 类别超过 4 类时分泳道会占高度
+submission_safe: false
