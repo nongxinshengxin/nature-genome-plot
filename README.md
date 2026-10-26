@@ -5,7 +5,6 @@
 ![R](https://img.shields.io/badge/R-4.5-276DC3?logo=r&logoColor=white)
 ![templates](https://img.shields.io/badge/archetypes-15-2ea44f)
 ![presets](https://img.shields.io/badge/style%20presets-48-1f6feb)
-![smoke](https://img.shields.io/badge/smoke%20tests-48%2F48-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 
 本项目包含 15 个核心图型模板、48 个期刊风格预设以及 48 张附带文献出处的风格卡片。所有模板均为可直接运行的 R 代码。
