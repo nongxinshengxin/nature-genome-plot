@@ -1,7 +1,7 @@
 # 冒烟测试报告
 
-- 组合数：48；通过：48；失败：0
-- 用时：39s
+- 组合数：51；通过：51；失败：0
+- 用时：42s
 
 | archetype | preset | 状态 | 字节 | 尺寸 | 错误 |
 |---|---|---|---|---|---|
@@ -20,9 +20,9 @@
 | linear-tracks | minimal-editorial | ok | 237809 | 2161x944 |  |
 | linear-tracks | dense-diagnostic | ok | 256515 | 2161x944 |  |
 | linear-tracks | high-contrast | ok | 235986 | 2161x944 |  |
-| manhattan-qq | minimal-editorial | ok | 356201 | 2161x826 |  |
-| manhattan-qq | dense-diagnostic | ok | 328858 | 2161x826 |  |
-| manhattan-qq | high-contrast | ok | 307156 | 2161x826 |  |
+| manhattan-qq | minimal-editorial | ok | 356094 | 2161x826 |  |
+| manhattan-qq | dense-diagnostic | ok | 329473 | 2161x826 |  |
+| manhattan-qq | high-contrast | ok | 307159 | 2161x826 |  |
 | pangenome-composition | minimal-editorial | ok | 82684 | 2161x826 |  |
 | pangenome-composition | dense-diagnostic | ok | 83193 | 2161x826 |  |
 | pangenome-composition | high-contrast | ok | 85112 | 2161x826 |  |
@@ -53,3 +53,6 @@
 | gene-structure | nature-gene-model | ok | 47934 | 2161x944 |  |
 | gene-structure | minimal-editorial | ok | 47335 | 2161x944 |  |
 | gene-structure | high-contrast | ok | 55700 | 2161x944 |  |
+| go-enrichment | nature-dotplot | ok | 122037 | 1417x1417 |  |
+| go-enrichment | minimal-editorial | ok | 116302 | 1417x1417 |  |
+| go-enrichment | high-contrast | ok | 141673 | 1417x1417 |  |

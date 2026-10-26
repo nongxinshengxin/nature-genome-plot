@@ -191,3 +191,15 @@ archetypes:
   fixture: fixtures/gene-structure/
   template: templates/R/gene-structure.R
   summary: 一行一个基因：箭头 + 外显子方块 + 结构域色条
+- id: go-enrichment
+  label: GO / 通路富集（点图）
+  implementation: ggplot2
+  structures:
+  - dotplot
+  presets:
+  - nature-dotplot
+  - minimal-editorial
+  - high-contrast
+  fixture: fixtures/go-enrichment/
+  template: templates/R/go-enrichment.R
+  summary: 按 BP/CC/MF 分面的富集点图：gene ratio × 基因数 × 校正 P

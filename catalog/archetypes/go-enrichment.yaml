@@ -1,0 +1,22 @@
+id: go-enrichment
+label: GO / 通路富集（点图）
+status: prototype
+implementation: ggplot2
+structures: [dotplot]
+why: >
+  一张图说清「这批基因富集到什么功能」：y 是条目，x 是 gene ratio，
+  点大小是基因数，颜色是校正后显著性，按 BP/CC/MF 分面。
+inputs:
+  go:
+    file: go.tsv
+    columns: {term: chr, ontology: "BP/CC/MF", gene_ratio: num, count: int, p_adjust: num}
+    optional: [fold_enrichment]
+presets: [nature-dotplot, minimal-editorial, high-contrast]
+rules:
+  - 每个 ontology 只显示 top N（默认 8），全量进补充表
+  - p_adjust 为 0 时先截断，避免 Inf
+  - 条目名超过 42 字符换行，不要斜排
+  - x 用 gene ratio 或 fold enrichment，不要混用
+fixtures: fixtures/go-enrichment/
+template: templates/R/go-enrichment.R
+tests: pending

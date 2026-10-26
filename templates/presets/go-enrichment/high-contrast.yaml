@@ -1,0 +1,17 @@
+label: High contrast
+x_var: gene_ratio
+x_label: Gene ratio
+top_n: 8
+colour_low: '#FFD92F'
+colour_high: '#67000D'
+point_min: 1.8
+point_max: 6.5
+base_size: 8
+axis_text: 7
+strip_face: bold
+panel_border: false
+grid: false
+size_title: Count
+colour_title: -log10(P adjust)
+legend: right
+wrap: 42

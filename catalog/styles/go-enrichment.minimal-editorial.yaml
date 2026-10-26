@@ -1,0 +1,40 @@
+id: go-enrichment.minimal-editorial
+archetype: go-enrichment
+label: Minimal editorial
+status: draft
+preset: templates/presets/go-enrichment/minimal-editorial.yaml
+template: templates/R/go-enrichment.R
+provenance:
+  support_n: 3
+  evidence:
+  - doi: 10.1038/s41467-024-55755-0
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 4
+    caption: GO enrichment for genes in different plant cell types, shown as ontology-grouped
+      dot plots
+  - doi: 10.1038/s41592-025-02961-3
+    journal: Nature Methods
+    year: 2025
+    figure: Extended Data Fig. 5
+    caption: Pathway and process enrichment of model-contributing genes
+  - doi: 10.1038/s41598-025-29403-6
+    journal: Scientific Reports
+    year: 2025
+    figure: Fig. 5
+    caption: Dot plot showing enrichment analysis of pathways and gene ontologies
+  derivation: dot-plot grammar from Nature-family enrichment figures; facet-by-ontology
+    layout
+visual_grammar:
+  y: GO term, wrapped
+  x: gene ratio
+  size: gene count
+  colour: -log10 adjusted P
+  facets: BP / CC / MF
+when_to_use: GO/通路富集结果展示；需要同时表达显著性、基因数和比例
+avoid_when: 条目超过 30 个（改条形图或分页）；需要展示基因-条目对应关系（改 cnetplot）
+pitfalls:
+- p_adjust=0 会变 Inf，先截断
+- 条目名不要斜排
+- top N 之外的条目要进补充表
+submission_safe: true

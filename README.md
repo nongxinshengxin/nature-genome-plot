@@ -3,17 +3,17 @@
 **将基因组、泛基因组及群体基因组的分析结果，转化为符合 Nature 系列期刊出版标准的矢量图。**
 
 ![R](https://img.shields.io/badge/R-4.5-276DC3?logo=r&logoColor=white)
-![templates](https://img.shields.io/badge/archetypes-15-2ea44f)
-![presets](https://img.shields.io/badge/style%20presets-48-1f6feb)
+![templates](https://img.shields.io/badge/archetypes-16-2ea44f)
+![presets](https://img.shields.io/badge/style%20presets-51-1f6feb)
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 
-本项目包含 15 个核心图型模板、48 个期刊风格预设以及 48 张附带文献出处的风格卡片。所有模板均为可直接运行的 R 代码。
+本项目包含 16 个核心图型模板、51 个期刊风格预设以及 51 张附带文献出处的风格卡片。所有模板均为可直接运行的 R 代码。
 在数据高度规范时支持一键出图；对于非标准化数据，系统将先进行格式梳理与映射，再执行渲染。
 
 > **快速概览**：导入数据 → 自动判定图型 → 诊断列名、缺失值及命名规范 → 映射为标准数据框 → 渲染两种预设风格 → 依据 12 项顶级期刊投稿标准进行合规性审查。
 > 所有的生成图形与代码均遵循 MIT 许可，允许自由修改与复用。
 
-![15 archetypes](docs/images/15-archetypes.png)
+![16 archetypes](docs/images/16-archetypes.png)
 
 ---
 
@@ -67,7 +67,7 @@
 
 ---
 
-## 15 个核心图型模板
+## 16 个核心图型模板
 
 | # | 图型标识 | 解决的科学问题 | 所需数据结构 | 可选风格数 |
 |---|---|---|---|---|
@@ -86,10 +86,11 @@
 | 13 | `binned-correlation` | 遗传多样性沿分位数与 TE/基因密度或甲基化水平的关联 | 窗口表（多样性指标 + 数值列） | 3 |
 | 14 | `region-architecture` | 局部区段内基因、TE 及其他调控元件的空间排布 | 基因表 + TE 表 + 可选轨道 + 区段坐标 | 3 |
 | 15 | `gene-structure` | 单一基因内的外显子、内含子及蛋白结构域架构 | 基因、外显子、结构域配置表 | 3 |
+| 16 | `go-enrichment` | 富集到哪些 GO 功能或通路 | GO 表（term/ontology/ratio/count/P） | 3 |
 
 每个图型的输入契约、结构变体及硬性约束规则详见 `catalog/archetypes/<id>.yaml`。
 
-## 48 种风格预设
+## 51 种风格预设
 
 内置三大风格族，确保跨图型展示时具备高度的视觉一致性：
 
@@ -101,6 +102,9 @@
 
 定制风格包括：
 - Circos 专用：`soft-pastel`（柔和马卡龙）、`mono-blue`（单色调蓝）、`warm-editorial`（暖色编辑风）。
+- GO 富集：`go-enrichment` 的 `nature-dotplot`，按 BP/CC/MF 分面，x 为 gene ratio，点大小为基因数，颜色为校正后显著性。
+
+![GO enrichment](docs/images/go-enrichment.png)
 
 每张风格卡均包含 `submission_safe` 属性与色差数值（deutan/protan）；`minimal-editorial` 与 `dense-diagnostic` 已通过严格的色盲友好度测试。
 
@@ -117,7 +121,7 @@
 ### 集成至 Agent
 
 ```bash
-git clone [https://github.com/nongxinshengxin/nature-genome-plot.git](https://github.com/nongxinshengxin/nature-genome-plot.git)
+git clone https://github.com/nongxinshengxin/nature-genome-plot.git
 cd nature-genome-plot
 
 ./install.sh            # 同时配置至 DSH、Claude Code、Codex（用户级）
@@ -159,7 +163,7 @@ R 依赖分两类：
 
 ```bash
 python3 scripts/validate/catalog_check.py     # 结构完整性
-python3 scripts/validate/smoke.py             # 48 个渲染组合
+python3 scripts/validate/smoke.py             # 51 个渲染组合
 Rscript scripts/validate/style_audit.R        # 色盲审计
 ```
 
@@ -241,18 +245,18 @@ drop_na: [P]
 ├── SKILL.md                  # 路由：意图 → 工作流 → 按需加载
 ├── manifest.yaml             # 加载轴
 ├── catalog/
-│   ├── index.yaml            # 15 行摘要
+│   ├── index.yaml            # 16 行摘要
 │   ├── archetypes/           # 输入契约、规则
 │   └── styles/               # 39 张风格卡（证据 + CVD + 适用场景）
 ├── templates/
-│   ├── R/                    # 15 个 CLI 模板
-│   └── presets/              # 48 个 YAML
+│   ├── R/                    # 16 个 CLI 模板
+│   └── presets/              # 51 个 YAML
 ├── adapters/                 # 5 个格式转换
 ├── scripts/
 │   ├── profile/              # 判型、诊断、映射
 │   ├── harvest/              # 文献语料构建
 │   └── validate/             # 冒烟、catalog、CVD
-├── fixtures/                 # 15 套合成数据
+├── fixtures/                 # 16 套合成数据
 ├── references/               # 期刊规格、选型规则、工作流
 ├── examples/                 # 端到端案例
 └── docs/                     # 验收、审计、已知问题
@@ -264,7 +268,7 @@ drop_na: [P]
 
 | 检查 | 结果 |
 |---|---|
-| 渲染矩阵 | 48/48 通过 |
+| 渲染矩阵 | 51/51 通过 |
 | catalog 结构 | 12 图型 / 39 卡，0 错误 |
 | 色盲审计 | 25 通过，9 个幻灯片专用，2 个装饰风格标注 |
 | 适配器 | 5/5 通过 |

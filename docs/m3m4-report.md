@@ -1,4 +1,4 @@
-# M3/M4 进度：15 个图型模板（2026-10-26）
+# M3/M4 进度：16 个图型模板（2026-10-26）
 
 | # | archetype | 实现 | 预设 | 结构变体 |
 |---|---|---|---|---|
@@ -17,8 +17,9 @@
 | 13 | `binned-correlation` | 分位箱线相关图（多样性 × TE/基因密度） | ggplot2 + patchwork | 3 | stacked_panels |
 | 14 | `region-architecture` | 基因组区段图谱（基因 + 重复序列 + 轨道） | ggplot2 + patchwork | 3 | single_segment |
 | 15 | `gene-structure` | 基因结构（外显子/内含子 + 结构域） | gggenes + ggplot2 | 3 | gene_rows |
+| 16 | `go-enrichment` | GO / 通路富集（点图） | ggplot2 | 3 | dotplot |
 
-- 预设总数：48 个 YAML（12 类 × 3，circos 6，其余新增各 3）
-- 冒烟测试：48/48 通过（2026-10-26）
+- 预设总数：51 个 YAML（12 类 × 3，circos 6，其余新增各 3）
+- 冒烟测试：51/51 通过（2026-10-26）
 - 数据契约：`catalog/archetypes/*.yaml`
 - 已知问题见 `docs/todo.md`

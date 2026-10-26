@@ -1,0 +1,27 @@
+term	ontology	gene_ratio	count	p_adjust	fold_enrichment
+response to biotic stimulus	BP	0.1429	87	0.01212	1.37
+defense response to bacterium	BP	0.3549	153	1.478e-12	3.53
+cell wall organization	BP	0.5223	16	0.01982	3.98
+photosynthesis	BP	0.1658	76	3.609e-09	4.48
+regulation of transcription	BP	0.0597	202	2.297e-09	2.27
+signal transduction	BP	0.2455	190	2.837e-09	3.17
+auxin-activated signaling	BP	0.0346	83	3.162e-12	1.48
+programmed cell death	BP	0.0608	23	7.89e-05	3.24
+response to cold	BP	0.2507	118	1.011e-06	3.27
+secondary metabolite biosynthesis	BP	0.1389	143	1.692e-07	2.57
+nucleus	CC	0.2518	134	1.633e-12	1.97
+plasma membrane	CC	0.4677	94	0.0001326	3.59
+chloroplast	CC	0.4116	138	3.759e-09	1.39
+vacuole	CC	0.2684	193	1.11e-11	1.93
+extracellular region	CC	0.0811	119	0.006667	4.26
+cell wall	CC	0.5467	173	0.02337	1.64
+cytosol	CC	0.3433	143	4.636e-08	2.49
+mitochondrion	CC	0.259	32	1.016e-10	4.22
+protein kinase activity	MF	0.4072	150	0.0009503	2.48
+ATP binding	MF	0.2791	26	9.946e-05	4.43
+transcription factor activity	MF	0.1666	79	4.741e-11	3.35
+oxidoreductase activity	MF	0.0412	81	1.048e-11	3.01
+carbohydrate binding	MF	0.2439	81	1.958e-12	2.75
+transporter activity	MF	0.1308	30	2.644e-12	3.23
+DNA binding	MF	0.2483	131	3.898e-09	2.55
+catalytic activity	MF	0.2761	120	4.396e-10	2.51

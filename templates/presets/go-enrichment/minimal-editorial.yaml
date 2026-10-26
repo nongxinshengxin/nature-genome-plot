@@ -1,0 +1,17 @@
+label: Minimal editorial
+x_var: gene_ratio
+x_label: Gene ratio
+top_n: 8
+colour_low: '#FEE8C8'
+colour_high: '#B30000'
+point_min: 1.0
+point_max: 4.0
+base_size: 7
+axis_text: 6
+strip_face: bold
+panel_border: false
+grid: false
+size_title: Count
+colour_title: -log10(P adjust)
+legend: right
+wrap: 42
