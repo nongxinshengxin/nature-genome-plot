@@ -102,13 +102,6 @@
 
 定制风格包括：
 - Circos 专用：`soft-pastel`（柔和马卡龙）、`mono-blue`（单色调蓝）、`warm-editorial`（暖色编辑风）。
-- `binned-correlation` 的 `nature-decile` 风格：复刻 *Nature Communications* 经典排版（十分位箱线图 + 渐变映射 + 规范化 rho/P 标注）。
-- `region-architecture` 的 `nature-region` 风格：采用单区段线性排布，自动对齐基因箭头、TE 色块与底层 GC/甲基化轨道，比例尺自动取整。
-- `gene-structure` 的 `nature-gene-model`：基于 [gggenes](https://github.com/wilkox/gggenes) 渲染，清晰区分 CDS 与 UTR，底层同步对齐蛋白结构域。
-
-![gene structure](docs/images/gene-structure.png)
-
-![circos styles](docs/images/circos-styles.png)
 
 每张风格卡均包含 `submission_safe` 属性与色差数值（deutan/protan）；`minimal-editorial` 与 `dense-diagnostic` 已通过严格的色盲友好度测试。
 
