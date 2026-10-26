@@ -179,3 +179,15 @@ archetypes:
   fixture: fixtures/region-architecture/
   template: templates/R/region-architecture.R
   summary: 单区段线性图：基因箭头 + TE 色块 + 可选轨道
+- id: gene-structure
+  label: 基因结构（外显子/内含子 + 结构域）
+  implementation: gggenes + ggplot2
+  structures:
+  - gene_rows
+  presets:
+  - nature-gene-model
+  - minimal-editorial
+  - high-contrast
+  fixture: fixtures/gene-structure/
+  template: templates/R/gene-structure.R
+  summary: 一行一个基因：箭头 + 外显子方块 + 结构域色条

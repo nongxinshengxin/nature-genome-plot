@@ -1,0 +1,42 @@
+id: gene-structure.nature-gene-model
+archetype: gene-structure
+label: Nature gene model
+status: draft
+preset: templates/presets/gene-structure/nature-gene-model.yaml
+template: templates/R/gene-structure.R
+provenance:
+  support_n: 3
+  evidence:
+  - doi: 10.1038/s41588-025-02137-x
+    journal: Nature Genetics
+    year: 2025
+    figure: Fig. 5
+    caption: 'Gene structure annotation and AS events based on the FL transcriptome:
+      exon/intron models with transcript support'
+  - doi: 10.1038/s41467-024-53718-z
+    journal: Nature Communications
+    year: 2024
+    figure: Fig. 3
+    caption: Gene structure of ZjAGL28 accompanied by genetic variation along the
+      gene model
+  - doi: 10.1038/s41467-023-42161-1
+    journal: Nature Communications
+    year: 2023
+    figure: Fig. 2
+    caption: 'Genomic organization of the IGH locus: genes and repeated regions drawn
+      as linear maps'
+  derivation: gene-arrow grammar from gggenes; exon/domain layering adapted from Nature
+    gene-structure figures
+visual_grammar:
+  rows: one gene per row
+  gene: arrow by strand, light body
+  exon: box, CDS dark / UTR light
+  domain: coloured bar under the gene
+  axis: position within gene (kb)
+when_to_use: 候选基因外显子结构、SV/InDel 落点、可变剪接、蛋白结构域排布
+avoid_when: 跨基因组的基因家族共线性（改用 synteny / region-architecture）
+pitfalls:
+- 外显子过短会退化成线
+- UTR 与 CDS 必须分开上色
+- 结构域坐标要和外显子同一坐标系
+submission_safe: true

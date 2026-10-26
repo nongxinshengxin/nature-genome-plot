@@ -5,11 +5,13 @@
 #   Rscript scripts/install_deps.R          # install what is missing
 #   Rscript scripts/install_deps.R --check  # only report
 
+if (dir.exists(".Rlib")) .libPaths(c(".Rlib", .libPaths()))
+
 args <- commandArgs(trailingOnly = TRUE)
 check_only <- "--check" %in% args
 
 cran <- c("ggplot2", "data.table", "patchwork", "yaml", "circlize",
-          "ggrepel", "scales", "ragg", "svglite", "colorspace")
+          "ggrepel", "scales", "ragg", "svglite", "colorspace", "gggenes")
 bioc <- c("ComplexHeatmap", "ggtree", "treeio")
 
 installed <- rownames(installed.packages())

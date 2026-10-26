@@ -1,0 +1,28 @@
+id: gene-structure
+label: 基因结构（外显子/内含子 + 结构域）
+status: prototype
+implementation: gggenes + ggplot2
+structures: [gene_rows]
+why: >
+  一行一个基因：箭头给方向和全长，方块给外显子（CDS/UTR 分色），
+  下方色条给蛋白结构域。回答「这个基因长什么样、变异落在哪」。
+inputs:
+  genes:
+    file: genes.tsv
+    columns: {gene: chr, start: int, end: int, strand: "+/-", family: chr}
+  exons:
+    file: exons.tsv
+    columns: {gene: chr, start: int, end: int, type: "CDS/UTR", strand: "+/-"}
+  domains:
+    file: domains.tsv
+    columns: {gene: chr, start: int, end: int, domain: chr}
+presets: [nature-gene-model, minimal-editorial, high-contrast]
+rules:
+  - x 轴用基因内相对位置（kb），多个基因才能并排比较
+  - 负链基因箭头翻向，外显子仍按基因组顺序
+  - 结构域最多 4 类，多了改补充图
+  - 外显子数量差异大时按基因分组排序，不要按长度
+  - 依赖 gggenes（CRAN），首次使用需安装
+fixtures: fixtures/gene-structure/
+template: templates/R/gene-structure.R
+tests: pending

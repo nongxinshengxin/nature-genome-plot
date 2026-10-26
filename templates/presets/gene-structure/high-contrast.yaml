@@ -1,0 +1,23 @@
+label: High contrast
+base_size: 8
+axis_text: 7
+gene_fill: '#E8E8E8'
+gene_border: '#000000'
+arrow_height: 0.3
+exon_h: 0.24
+exon_lw: 0.8
+domain_h: 0.12
+domain_offset: 0.34
+domain_colors:
+  LRR: '#0072B2'
+  Kinase: '#D55E00'
+  NB-ARC: '#009E73'
+  Domain A: '#CC79A7'
+  Domain B: '#E69F00'
+label_size: 7
+scalebar_kb: null
+panel_border: false
+legend: bottom
+exon_fill:
+  CDS: '#2C3E50'
+  UTR: '#D9D9D9'

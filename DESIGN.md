@@ -13,7 +13,7 @@
 
 | 层 | 内容 | 用户感知 |
 |---|---|---|
-| 知识层 | 14 个图型（archetype）+ 3 个风格家族（每个图型 2–3 个预设）+ 选型规则 | 「我这个数据该画什么图」 |
+| 知识层 | 15 个图型（archetype）+ 3 个风格家族（每个图型 2–3 个预设）+ 选型规则 | 「我这个数据该画什么图」 |
 | 代码层 | CLI 可运行的 R/Python 模板、数据契约、格式适配器、toy fixture | 「给我能直接跑的代码」 |
 | 交互层 | 路由、数据诊断、渲染迭代、期刊合规质检、交付包 | 「按我的数据改到能用」 |
 
@@ -90,7 +90,7 @@ nature-genome-plot/
 ├── README.md                    # 安装与用法
 ├── catalog/
 │   ├── index.yaml               # 轻量索引（一行摘要），路由只读这个
-│   ├── archetypes/              # 14 个图型定义（输入契约、结构变体、规则）
+│   ├── archetypes/              # 15 个图型定义（输入契约、结构变体、规则）
 │   ├── styles/                  # 24–36 张 style card（YAML）
 │   └── papers/                  # provenance 记录（DOI、图号、观察、代码仓库）
 ├── references/
@@ -495,7 +495,7 @@ out/<slug>/
 | M1 采集筛选 ✅ | `docs/corpus.csv`（200 篇）、`docs/code-audit.csv` | 1.5d | 已完成：200/200 全文，78 篇 Code availability，92 篇仓库链接 |
 | M2 证据抽取 ✅ | `docs/figure-inventory.csv` + `catalog/styles/*` | 1.5d | 12 类每类 ≥25 篇、每卡 ≥3 篇证据 |
 | M3 风格合成 ✅ | 39 张风格卡 + `decision-rules.md` | 3d | 每类 3–6 个预设，卡片含 DOI 证据（状态 draft） |
-| M4 模板实现 ✅ | 14 模板 + 45 预设 + fixture | 6d | 冒烟 45/45，CVD 审计完成 |
+| M4 模板实现 ✅ | 15 模板 + 48 预设 + fixture | 6d | 冒烟 48/48，CVD 审计完成 |
 | M5 路由与工作流 ✅ | `SKILL.md`、`manifest.yaml`、wf1–wf5 | 1.5d | 已软链安装并成功加载 |
 | M6 质检文档 ✅ | `journal-specs.md`、`acceptance.md`、`style-audit.md` | 2d | 见验收报告 |
 | M7 dogfood 🔶 | `examples/walkthrough-gwas.md` + demo 交付包 | 1d | 1/3 完成（脏 GWAS），余 2 个待真实数据 |
