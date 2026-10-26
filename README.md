@@ -14,7 +14,7 @@
 > **30 秒版**：把数据丢过来 → 判图型 → 诊断列名/缺失/命名 → 映射成契约表 → 渲染两种风格 → 按 12 项投稿标准检查。
 > 图和代码都可以直接改（MIT 许可）。
 
-![12 archetypes](docs/images/12-archetypes.png)
+![15 archetypes](docs/images/15-archetypes.png)
 
 ---
 
