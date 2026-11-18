@@ -140,6 +140,16 @@ draw <- function() {
 
 if (grepl("\\.pdf$", out_file, ignore.case = TRUE)) {
   pdf(out_file, width = width_mm / 25.4, height = height_mm / 25.4, family = FONT)
+} else if (grepl("\\.svg$", out_file, ignore.case = TRUE)) {
+  # 之前 else 分支一律走 agg_png，.svg 会静默写成 PNG 字节
+  # svglite 输出真正的 <text>（文字可编辑）；cairo 的 svg() 会把文字转成路径
+  if (requireNamespace("svglite", quietly = TRUE)) {
+    svglite::svglite(out_file, width = width_mm / 25.4, height = height_mm / 25.4)
+  } else if (capabilities("cairo")) {
+    svg(out_file, width = width_mm / 25.4, height = height_mm / 25.4, family = FONT)
+  } else {
+    stop("SVG export needs svglite or cairo")
+  }
 } else {
   ragg::agg_png(out_file, width = width_mm, height = height_mm, units = "mm", res = dpi)
 }

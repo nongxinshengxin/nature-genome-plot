@@ -61,7 +61,12 @@ if (isTRUE(st$show_support) && !is.null(tree$node.label)) {
 p <- gheatmap(p, mat, offset = st$offset * 4, width = 0.55,
               colnames_angle = 45, colnames_offset_y = 0.25, colnames_position = "bottom",
               font.size = st$tip_size / .pt,
-              color = st$heat_border) +
+              color = st$heat_border)
+# gheatmap 自带一个 fill scale；先摘掉再套预设色带，否则会打印
+# "Scale for fill is already present" 并静默覆盖
+p$scales$scales <- p$scales$scales[!vapply(p$scales$scales,
+  function(s) "fill" %in% s$aesthetics, logical(1))]
+p <- p +
   scale_fill_gradientn(colours = unlist(st$heat_scale), name = NULL) +
   theme(text = element_text(family = FONT),
         legend.position = "right",
