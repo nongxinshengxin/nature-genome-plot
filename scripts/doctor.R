@@ -9,7 +9,7 @@ args <- commandArgs(trailingOnly = TRUE)
 do_install <- "--install" %in% args
 
 cran <- c("ggplot2", "data.table", "patchwork", "yaml", "circlize",
-          "ggrepel", "scales", "ragg", "svglite", "colorspace")
+          "ggrepel", "scales", "ragg", "svglite", "colorspace", "gggenes")
 bioc <- c("ComplexHeatmap", "ggtree", "treeio")
 py <- c("pandas", "yaml", "PIL")
 

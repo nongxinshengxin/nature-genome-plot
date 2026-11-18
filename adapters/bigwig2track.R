@@ -41,9 +41,13 @@ if (grepl("\\.(bw|bigwig)$", in_file, ignore.case = TRUE)) {
   dt <- read_bedgraph(in_file)
 }
 
-if (nzchar(chrom)) dt <- dt[chrom == ..chrom]
-if (start > 0) dt <- dt[end > start]
-if (end > 0) dt <- dt[start < end]
+# 局部变量与列名同名时，i 里的名字会优先解析成列；先改名再筛
+chrom_sel <- chrom
+start_sel <- start
+end_sel <- end
+if (nzchar(chrom_sel)) dt <- dt[chrom == chrom_sel]
+if (start_sel > 0) dt <- dt[end > start_sel]
+if (end_sel > 0) dt <- dt[start < end_sel]
 
 # bin to fixed windows
 dt[, bin_start := floor((start - 1) / bin) * bin + 1]
